@@ -1,0 +1,437 @@
+
+<!----><!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Вопросы</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqGR1bleVWJ8jDNQqxbjI1x1DucM4qJDc"></script>
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <!--header-->
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="header_logo"><a href="/"><img src="img/logo.png" alt="logo" class="header_logo-img"></a></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+              <div class="header_text">
+                Юридические услуги - помощь при ДТП,
+                разводах, исковые заявления, сопровождение
+                в суде, составление претензии, консультирование.
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="header_info"><a href="tel:+7 (495) 585-82-43" class="header_phone">+7 (495) 585-82-43</a><a href="mailto:info@vsemvsud.ru" class="header_mail">info@vsemvsud.ru</a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="nav"><a href="/" class="nav_logo">VSEMvSUD.ru</a>
+                <ul class="nav_menu">
+                  <li class="nav_menu-item"><a href="/">ГЛАВНАЯ</a></li>
+                  <li class="nav_menu-item"><a href="#">СТАТЬИ<sup>25</sup></a></li>
+                  <li class="nav_menu-item"><a href="#">ОБ АВТОРЕ</a></li>
+                  <li class="nav_menu-item"><a href="#">ЦЕНЫ</a></li>
+                </ul>
+                <div class="nav_humburger js-nav">
+                  <div class="nav_humburger-line js-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--calc-->
+      <section class="section calc">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <h3 class="calc_header">Калькулятор госпошлины в суд</h3>
+              <div class="calc_header-txt"><strong>
+                  Внимание! Настоящий калькулятор госпошлины создан на основе
+                  последних изменений в законодательства и является актуальным на
+                  cегодняшний день</strong><i>
+                  Если вы (физ. лицо) требуете деньги или имущество, которое подлежит оценке,
+                  введите сумму иска для расчета госпошлины!</i><i>
+                  Для всех остальных видов требований выберите вид госпошлины,
+                  щелкнув по калькулятору!</i></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="calc_wrap">
+                <div class="calc_title">
+                  <h4>Выберите тип заявления:</h4>
+                </div>
+                <div class="calc_calc">
+                  <form id="calc_form" method="get" action="/order.html" class="calc_form">
+                    <div class="calc_box">
+                      <label for="calc1" class="calc_label">Исковое заявление имущественного характера.
+                        <input id="calc1" type="radio" name="calc" class="calc_input js-calc_sum js-calc"><span class="psevdo"></span>
+                        <div class="calc_inp_box"><span>Введите сумму иска в рублях</span>
+                          <input name="f_inp1" class="f_inp1">
+                        </div>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc2" class="calc_label">Заявления о вынесении судебного приказа не менее (200 р.)
+                        <input id="calc2" type="radio" name="calc" class="calc_input js-calc_sum js-calc"><span class="psevdo"></span>
+                        <div class="calc_inp_box"><span>Введите сумму иска в рублях</span>
+                          <input name="f_inp2" class="f_inp2">
+                        </div>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc3" class="calc_label">
+                        Исковое заявление имущественного характера, не подлежащего оценке,
+                        а также исковое заявление неимущественного характера (300 р.)
+                        <input id="calc3" type="radio" name="calc" value="300" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc4" class="calc_label">Подача надзорной жалобы (300 р.)
+                        <input id="calc4" type="radio" name="calc" value="300" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc5" class="calc_label">Заявление о расторжении брака (600 р.)
+                        <input id="calc5" type="radio" name="calc" value="600" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc6" class="calc_label">
+                        Заявление об оспаривании (полностью или частично) нормативных правовых
+                        актов (нормативных актов) государственных органов, Центрального банка
+                        Российской Федерации, государственных внебюджетных фондов, органов
+                        местного самоуправления, государственных корпораций, должностных лиц,
+                        а также административного искового заявления об оспаривании ненормативных
+                        правовых актов Президента Российской Федерации, Совета Федерации
+                        Федерального Собрания Российской Федерации, Государственной Думы
+                        Федерального Собрания Российской Федерации, Правительства Российской
+                        Федерации, Правительственной комиссии по контролю за осуществлением
+                        иностранных инвестиций в Российской Федерации (300 р.)
+                        <input id="calc6" type="radio" name="calc" value="300" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc7" class="calc_label">
+                        Подача административного искового заявления об оспаривании актов федеральных
+                        органов исполнительной власти, иных федеральных государственных органов,
+                        Центрального банка Российской Федерации, государственных внебюджетных
+                        фондов, содержащих разъяснения законодательства и обладающих нормативными
+                        свойствами (300 р.)
+                        <input id="calc7" type="radio" name="calc" value="300" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc8" class="calc_label">Заявление по делам особого производства (300 р.)
+                        <input id="calc8" type="radio" name="calc" value="300" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc9" class="calc_label">Апелляционная жалоба и (или) кассационная жалоба (150 р.)
+                        <input id="calc9" type="radio" name="calc" value="150" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc10" class="calc_label">
+                        Заявление о выдаче исполнительных листов на принудительное исполнение
+                        решений третейского суда (2 250 р.)
+                        <input id="calc10" type="radio" name="calc" value="2250" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc11" class="calc_label">Заявление об обеспечении иска, рассматриваемого в третейском суде  (300 р.)
+                        <input id="calc11" type="radio" name="calc" value="300" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc12" class="calc_label">Заявление об отмене решения третейского суда - (2 250 р.)
+                        <input id="calc12" type="radio" name="calc" value="2250" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc13" class="calc_label">Заявление по делам о взыскании алиментов на детей - (150 р.).
+                        <input id="calc13" type="radio" name="calc" value="150" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc14" class="calc_label">Взыскание алиментов как на содержание детей, так и на содержание истца (300 р.)
+                        <input id="calc14" type="radio" name="calc" value="300" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                    <div class="calc_box">
+                      <label for="calc15" class="calc_label">
+                        Заявления о присуждении компенсации за нарушение права на судопроизводство в
+                        разумный срок или права на исполнение судебного акта в разумный срок (300 р.)
+                        <input id="calc15" type="radio" name="calc" value="300" class="calc_input js-calc"><span class="psevdo"></span>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--calc-->
+      <section class="section specific">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <h3 class="specific_header">
+                Особенности уплаты государственной
+                пошлины при обращении в суды общей
+                юрисдикции, к мировым судьям
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="specific_text">
+                <p>
+                  1. По делам, рассматриваемым в судах общей юрисдикции, мировыми судьями, <a hreh="#">государственная пошлина</a>
+                  уплачивается с учетом следующих особенностей:
+                </p>
+                <p>
+                  1) при <a href="#">подаче исковых заявлений</a>, содержащих требования как имущественного, так и неимущественного
+                  характера, одновременно уплачиваются государственная пошлина, установленная для исковых заявлений
+                  имущественного характера, и государственная пошлина, установленная для исковых заявлений
+                  неимущественного характера;
+                </p>
+                <p>
+                  2) цена иска, по которой исчисляется государственная пошлина, определяется истцом, а в случаях,
+                  установленных законодательством, судьей по правилам, установленным гражданским процессуальным
+                  законодательством Российской Федерации;
+                </p>
+                <p>
+                  2.1) при подаче заявления об оспаривании нормативных правовых актов федеральных органов
+                  исполнительной власти, затрагивающих права и законные интересы заявителя в области правовой охраны
+                  результатов интеллектуальной деятельности и средств индивидуализации, в том числе в сфере патентных
+                  прав и прав на селекционные достижения, права на топологии интегральных микросхем, права на секреты
+                  производства (ноу-хау), права на средства индивидуализации юридических лиц, товаров, работ, услуг и
+                  предприятий, права использования результатов интеллектуальной деятельности в составе единой
+                  технологии: для физических лиц - 300 рублей;
+                </p>
+                <p>
+                  3) при подаче исковых заявлений о разделе имущества, находящегося в общей собственности, а также при
+                  подаче исковых заявлений о выделе доли из указанного имущества, о признании права на долю в
+                  имуществе размер государственной пошлины исчисляется в следующем порядке:
+                </p>
+                <p>
+                  если спор о признании права собственности истца (истцов) на это имущество ранее не решался судом - в
+                  соответствии с подпунктом 1 пункта 1 статьи 333.19 настоящего Кодекса;
+                </p>
+                <p>
+                  если ранее суд вынес решение о признании права собственности истца (истцов) на указанное имущество -
+                  в соответствии с подпунктом 3 пункта 1 статьи 333.19 настоящего Кодекса;
+                </p>
+                <p>
+                  4) при предъявлении встречного иска, а также заявлений о вступлении в дело третьих лиц, заявляющих
+                  самостоятельные требования относительно предмета спора, государственная пошлина уплачивается в
+                  соответствии с положениями статьи 333.19 настоящего Кодекса;
+                </p>
+                <p>
+                  5) при замене по определению суда выбывшей стороны ее правопреемником (в случае смерти
+                  физического лица, реорганизации организации, уступки требования, перевода долга и в других случаях
+                  перемены лиц в обязательствах) государственная пошлина уплачивается таким правопреемником, если
+                  она не была уплачена замененной стороной;
+                </p>
+                <p>
+                  6) в случае выделения судьей одного искового требования или нескольких из соединенных исковых
+                  требований в отдельное производство государственная пошлина, уплаченная при предъявлении иска,
+                  не пересчитывается и не возвращается. По делам, выделенным в отдельное производство,
+                  государственная пошлина повторно не уплачивается;
+                </p>
+                <p>
+                  7) при подаче кассационной жалобы соучастниками и третьими лицами, <a htef="#">выступающими в процессе</a> на
+                  той же стороне, что и лицо, подавшее кассационную жалобу, государственная пошлина не уплачивается;
+                </p>
+                <p>
+                  8) в случае, если истец освобожден от уплаты государственной пошлины в соответствии с настоящей
+                  главой, государственная пошлина уплачивается ответчиком (если он не освобожден от уплаты
+                  государственной пошлины) пропорционально размеру удовлетворенных судом исковых требований;
+                </p>
+                <p>
+                  9) при затруднительности определения цены иска в момент его предъявления размер государственной
+                  пошлины предварительно устанавливается судьей с последующей доплатой недостающей суммы
+                  государственной пошлины на основании цены иска, определенной судом при разрешении дела, в срок,
+                  установленный подпунктом 2 пункта 1 статьи 333.18 настоящего Кодекса;
+                </p>
+                <p>
+                  10) при увеличении истцом размера исковых требований недостающая сумма государственной пошлины
+                  доплачивается в соответствии с увеличенной ценой иска в срок, установленный подпунктом 2 пункта
+                  1 статьи 333.18 настоящего Кодекса. При уменьшении истцом размера исковых требований сумма излишне
+                  уплаченной государственной пошлины возвращается в порядке, предусмотренном статьей 333.40
+                  настоящего Кодекса. В аналогичном порядке определяется размер государственной пошлины, если суд в
+                  зависимости от обстоятельств дела выйдет за пределы заявленных истцом требований;
+                </p>
+                <p>
+                  11) при <a htef="#">подаче исковых заявлений</a> об истребовании наследниками принадлежащей им доли имущества
+                  государственная пошлина уплачивается в том порядке, который установлен при подаче исковых заявлений
+                  имущественного характера, не подлежащих оценке, если спор о признании права собственности на это
+                  имущество судом ранее был разрешен;
+                </p>
+                <p>
+                  12) при подаче исковых заявлений о расторжении брака с одновременным разделом совместно нажитого
+                  имущества супругов государственная пошлина уплачивается в размерах, установленных как для исковых
+                  заявлений о расторжении брака, так и для исковых заявлений имущественного характера;
+                </p>
+                <p>
+                  13) при отказе в принятии к рассмотрению искового заявления или заявления о вынесении судебного
+                  приказа уплаченная государственная пошлина при предъявлении иска или заявления о вынесении
+                  судебного приказа засчитывается в счет подлежащей уплате государственной пошлины;
+                </p>
+                <p>
+                  14) при подаче заявления о присуждении компенсации за нарушение права на судопроизводство в
+                  разумный срок или права на исполнение судебного акта в разумный срок:
+                </p>
+                <p>для физических лиц - 300 рублей;</p>
+                <p>
+                  2. Суды общей юрисдикции или мировые судьи, исходя из имущественного положения плательщика,
+                  вправе уменьшить размер государственной пошлины, подлежащей уплате по делам, рассматриваемым
+                  указанными судами или мировыми судьями, либо отсрочить (рассрочить) ее уплату в порядке,
+                  предусмотренном статьей 333.41 настоящего Кодекса.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3">
+              <div class="footer_logo"><a href="/"><img src="img/logo.png" alt="logo" class="footer_logo-img"></a><a href="/" class="footer_logo-title">VSEMvSUD.ru</a></div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <ul class="footer_list footer_list-left">
+                <li><a href="#">ЗАКОНОДАТЕЛЬСТВО</a></li>
+                <li><a href="#">ОБ АВТОРЕ</a></li>
+                <li><a href="#">ЦЕНЫ НА ЮРИДИЧЕСКИЕ</a></li>
+                <li><a href="#">УСЛУГИ В МОСКВЕ</a></li>
+                <li><a href="#">СТОИМОСТЬ ЧАСТНОГО ЮРИСТА</a></li>
+                <li><a href="#">ПОМОЩЬ</a></li>
+                <li><a href="#">ВСЕ СТАТЬИ</a></li>
+                <li><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <ul class="footer_list footer_list-right">
+                <li><a href="#">ПОЛЕЗНЫЕ СОВЕТЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#">ЮРИСТ НА ДОМ</a></li>
+                <li><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
+                <li><a href="#">БЛОГ</a></li>
+                <li><a href="#">SAM-SEBE-URIST</a></li>
+                <li><a href="#">ПРАЙС-ЛИСТ НА УСЛУГИ РЕГИСТРАЦИИ</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="footer_info">
+                <div class="footer_info-top"><a href="tel:+7 (495) 585-82-43" class="footer_phone">+7 (495) 585-82-43</a><a href="mailto:info@vsemvsud.ru" class="footer_mail">info@vsemvsud.ru</a><a href="javascript:;" data-fancybox data-src="#callback" class="footer_btn js-cbk">Заказать звонок</a></div>
+                <div class="footer_info-center">
+                  <p>г. Москва, Варшавское<br> ш. Д.132 стр. 9, оф. 589</p>
+                </div>
+                <div class="footer_info-bottom">
+                  <ul class="footer_social">
+                    <li><a href="#" class="footer_link footer_link-vk"></a></li>
+                    <li><a href="#" class="footer_link footer_link-fb"></a></li>
+                    <li><a href="#" class="footer_link footer_link-insta"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--mobile slide menu-->
+      <div class="mob">
+        <div class="mob_menu">
+          <div class="mob_menu-close js-close"></div>
+          <div class="mob_menu-list"></div>
+        </div>
+      </div>
+      <!-- callback modal-->
+      <div id="callback" class="callback">
+        <!--.callback_close.js-c_close-->
+        <div class="callback_title"><span>Заказать звонок</span></div>
+        <form id="c_back" method="post" class="callback_form">
+          <div class="callback_box">
+            <label for="c_name" class="callback_label">Имя:</label>
+            <input id="c_name" type="text" name="name" placeholder="Ваше имя..." class="callback_input callback_name">
+          </div>
+          <div class="callback_box">
+            <label for="c_phone" class="callback_label">Телефон:</label>
+            <input id="c_phone" type="tel" name="phone" placeholder="Ваш телефон..." class="callback_input callback_phone">
+          </div>
+          <div class="callback_box callback_box-subm">
+            <input type="submit" value="Отправить" class="callback_subm js-subm">
+          </div>
+        </form>
+      </div>
+      <!--qustions modal-->
+      <div id="modal" class="modal">
+        <!--.modal_close.js-c_close-->
+        <div class="modal_title"><span>Задать вопрос юристу</span></div>
+        <form id="mod" method="post" class="modal_form">
+          <div class="modal_box">
+            <label for="c_name" class="modal_label">Имя:</label>
+            <input id="m_name" type="text" name="name" placeholder="Ваше имя..." class="modal_input modal_name">
+          </div>
+          <div class="modal_box">
+            <label for="c_email" class="modal_label">E-mail:</label>
+            <input id="m_email" type="email" name="email" placeholder="Ваш e-mail..." class="modal_input modal_email">
+          </div>
+          <div class="modal_box">
+            <label for="c_name" class="modal_label">Вопрос:</label>
+            <textarea id="m_phone" form="mod" name="email" placeholder="Ваш вопрос..." class="modal_area"></textarea>
+          </div>
+          <div class="modal_box modal_box-subm">
+            <input type="submit" value="Отправить сообщение" class="modal_subm js-subm">
+          </div>
+        </form>
+      </div>
+      <!--calc modal-->
+      <div id="calc-modal" class="calc_modal">
+        <div class="calc_modal-wrap">
+          <form id="cl_form" method="post" class="calc_modal-form">
+            <div class="calc_modal-box js-txt"><span>Сумма государственной пошлины:</span><strong>0</strong>
+              <input id="cl_hidden" type="hidden" name="cl_hidden" class="calc_mobal-hidden js-hid">
+            </div>
+            <div class="calc_modal-box">
+              <p>Введите Ваши ФИО или название организации:</p>
+            </div>
+            <div class="calc_modal-box">
+              <input type="text" name="fio" placeholder="Ваше имя" class="calc_modal-input">
+            </div>
+            <div class="calc_modal-box">
+              <input type="text" name="address" placeholder="Ваш адрес" class="calc_modal-input">
+            </div>
+            <div class="calc_modal-box">
+              <input type="submit" value="Распечатать квитанцию" class="calc_modal-submit js-sbt">
+            </div>
+          </form>
+        </div>
+      </div>
+      <link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="libs/slick/slick.css">
+      <link rel="stylesheet" href="libs/slick/slick-theme.css">
+      <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+      <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="libs/select.js"></script>
+      <script type="text/javascript" src="libs/calc.js"></script>
+      <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+      <script type="text/javascript" src="libs/jquery.fancybox.min.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+section.section.calc
+  .container
+    .row
+      .col-lg-12.col-md-12
+        h3.calc_header Калькулятор госпошлины в суд
+        .calc_header-txt
+          strong.
+            Внимание! Настоящий калькулятор госпошлины создан на основе
+            последних изменений в законодательства и является актуальным на
+            cегодняшний день
+          i.
+            Если вы (физ. лицо) требуете деньги или имущество, которое подлежит оценке,
+            введите сумму иска для расчета госпошлины!
+          i.
+            Для всех остальных видов требований выберите вид госпошлины,
+            щелкнув по калькулятору!
+    .row
+      .col-lg-12.col-md-12
+        .calc_wrap
+          .calc_title
+            h4 Выберите тип заявления:
+          .calc_calc
+            form.calc_form#calc_form(method="get", action="/order.html")
+              .calc_box
+                label.calc_label(for="calc1") Исковое заявление имущественного характера.
+                  input.calc_input.js-calc_sum.js-calc#calc1(type="radio", name="calc")
+                  span.psevdo
+                  .calc_inp_box
+                    span Введите сумму иска в рублях
+                    input.f_inp1(type=text, name="f_inp1")
+              .calc_box
+                label.calc_label(for="calc2") Заявления о вынесении судебного приказа не менее (200 р.)
+                  input.calc_input.js-calc_sum.js-calc#calc2(type="radio", name="calc")
+                  span.psevdo
+                  .calc_inp_box
+                    span Введите сумму иска в рублях
+                    input.f_inp2(type=text, name="f_inp2")
+              .calc_box
+                label.calc_label(for="calc3") Исковое заявление имущественного характера, не подлежащего оценке,
+                  | а также исковое заявление неимущественного характера (300 р.)
+                  input.calc_input.js-calc#calc3(type="radio", name="calc", value="300")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc4") Подача надзорной жалобы (300 р.)
+                  input.calc_input.js-calc#calc4(type="radio", name="calc", value="300")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc5") Заявление о расторжении брака (600 р.)
+                  input.calc_input.js-calc#calc5(type="radio", name="calc", value="600")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc6") Заявление об оспаривании (полностью или частично) нормативных правовых
+                  | актов (нормативных актов) государственных органов, Центрального банка
+                  | Российской Федерации, государственных внебюджетных фондов, органов
+                  | местного самоуправления, государственных корпораций, должностных лиц,
+                  | а также административного искового заявления об оспаривании ненормативных
+                  | правовых актов Президента Российской Федерации, Совета Федерации
+                  | Федерального Собрания Российской Федерации, Государственной Думы
+                  | Федерального Собрания Российской Федерации, Правительства Российской
+                  | Федерации, Правительственной комиссии по контролю за осуществлением
+                  | иностранных инвестиций в Российской Федерации (300 р.)
+                  input.calc_input.js-calc#calc6(type="radio", name="calc", value="300")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc7") Подача административного искового заявления об оспаривании актов федеральных
+                  | органов исполнительной власти, иных федеральных государственных органов,
+                  | Центрального банка Российской Федерации, государственных внебюджетных
+                  | фондов, содержащих разъяснения законодательства и обладающих нормативными
+                  | свойствами (300 р.)
+                  input.calc_input.js-calc#calc7(type="radio", name="calc", value="300")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc8") Заявление по делам особого производства (300 р.)
+                  input.calc_input.js-calc#calc8(type="radio", name="calc", value="300")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc9") Апелляционная жалоба и (или) кассационная жалоба (150 р.)
+                  input.calc_input.js-calc#calc9(type="radio", name="calc", value="150")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc10") Заявление о выдаче исполнительных листов на принудительное исполнение
+                  | решений третейского суда (2 250 р.)
+                  input.calc_input.js-calc#calc10(type="radio", name="calc", value="2250")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc11") Заявление об обеспечении иска, рассматриваемого в третейском суде  (300 р.)
+                  input.calc_input.js-calc#calc11(type="radio", name="calc", value="300")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc12") Заявление об отмене решения третейского суда - (2 250 р.)
+                  input.calc_input.js-calc#calc12(type="radio", name="calc", value="2250")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc13") Заявление по делам о взыскании алиментов на детей - (150 р.).
+                  input.calc_input.js-calc#calc13(type="radio", name="calc", value="150")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc14") Взыскание алиментов как на содержание детей, так и на содержание истца (300 р.)
+                  input.calc_input.js-calc#calc14(type="radio", name="calc", value="300")
+                  span.psevdo
+              .calc_box
+                label.calc_label(for="calc15") Заявления о присуждении компенсации за нарушение права на судопроизводство в
+                  | разумный срок или права на исполнение судебного акта в разумный срок (300 р.)
+                  input.calc_input.js-calc#calc15(type="radio", name="calc", value="300")
+                  span.psevdo

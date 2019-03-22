@@ -1,0 +1,42 @@
+.specific
+  padding-top: 30px
+  padding-bottom: 60px
+  &_header
+    font-family: $semi
+    font-size: 36px
+    color: $fontBlack
+    padding-left: 32px
+    position: relative
+    width: 90%
+    +respond-to(992)
+      padding-left: 0
+      &:before
+        display: none
+    +respond-to(480)
+      font-size: 24px
+    &:before
+      content: ""
+      width: 25px
+      height: 8px
+      background: $white
+      position: absolute
+      top: 17px
+      left: 0
+  &_text
+    width: 90%
+    margin-top: 40px
+    font-family: $medium
+    font-size: 16px
+    color: $fontBlack
+    p
+      padding: 15px 0
+    a
+      color: $fontBlack
+      font-family: $bold
+      text-decoration: underline
+      z-index: 10
+      cursor: pointer
+      transition: .5s ease-in-out
+      &:hover
+        color: $white
+        transition: .5s ease-in-out

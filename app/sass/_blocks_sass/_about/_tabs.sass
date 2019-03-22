@@ -1,0 +1,45 @@
+.tabs
+  padding-top: 30px
+  padding-bottom: 30px
+  &_wrap
+    width: 100%
+  &_tab
+    ul
+      display: flex
+      flex-direction: row
+      +respond-to(992)
+        flex-direction: column
+      li
+        width: fit-content
+        font-family: $semi
+        font-size: 30px
+        color: $fontBlack
+        margin-left: 20px
+        cursor: pointer
+        +respond-to(1220)
+          font-size: 26px
+  &_content
+    margin-top: 50px
+
+.tab
+  width: 100%
+  display: none
+
+.show
+  display: block
+
+.content
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  &_img
+    +respond-to(1220)
+      max-width: 250px
+      margin-bottom: 30px
+      img
+        width: 100%
+        object-fit: cover
+
+.active
+  font-family: $bold !important
+  border-bottom: 3px solid $fontBlack

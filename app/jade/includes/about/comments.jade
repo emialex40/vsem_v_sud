@@ -1,0 +1,55 @@
+section.section.comments
+  .container
+    .row
+      .col-lg-12.col-md-12
+        h3.comments_header Отзывы клиентов
+        .comments_wrap
+          .comments_item
+            strong.comments_item-title Людмила
+            .comments_item-text
+              p.
+                Большое спасибо за информативный сайт! Мне,
+                чайнику в юридических делах, он оказался
+                чрезвычайно полезен.
+          .comments_item
+            strong.comments_item-title Наталья Иванова
+            .comments_item-text
+              p.
+                Выражаю огромную  благодарность Алексею
+                Юрьевичу за ведение моего дела в суде и прекрасную
+                работу. До знакомства с ним я обошла и
+                консультировалась во многих именитых и безымянных
+                юридических фирмах, и каждая из них  давала мне
+                абсолютно стандартные варианты ведения дела,
+                несколько интерпретировав одно решение от другого,
+                и,  соответственно,  финансовые затраты отличались
+                иногда в несколько раз, в соответствиями с этими
+                интерпретациям и именитостью контор... Случайно
+                зайдя этот сайт ,и , не  взирая на молодость и
+                отсутствие регалий,  я решила обратиться за
+                консультацией к Алексею Юрьевичу по своему
+                почти "безнадежному" делу. То, что было предложено
+                мне  в качестве предоставления дела, координально
+                отличалось от всех ранее предложенных вариантов и
+                было  подкреплено юридически законным
+                обоснованием. Алексей Юрьевич вел от начала до
+                конца все самостоятельно, постоянно информируя
+                меня о движении дела. Суд мы, конечно, выиграли,
+                и решение было таким, какое мне хотелось.
+        .comments_form
+          form#com_form.com_form(method="post")
+            .comments_box
+              label.comments_label.comments_label-l1(for="com_name") Имя
+              input#com_name.comments_input(type="text", name="name", placeholder="Ваше имя")
+            .comments_box
+              label.comments_label.comments_label-l2(for="com_phone") Телефон
+              input#com_phone.comments_input(type="tel", name="phone", placeholder="Ваш телефон")
+            .comments_box
+              label.comments_label.comments_label-l3(for="com_email") Email
+              input#com_email.comments_input(type="email", name="email", placeholder="Ваш email")
+            .comments_box
+              label.comments_label.comments_label-l4 Содержание
+              textarea.comments_textarea(placeholder="Оставьте отзыв")
+            .comments_box
+              input.comments_btn(type="submit", value="Отправить")
+

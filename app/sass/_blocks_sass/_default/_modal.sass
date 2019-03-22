@@ -1,0 +1,76 @@
+.modal
+  display: none
+  width: 555px
+  height: 380px
+  background: $white
+  border: 3px solid $body
+  padding: 25px !important
+  &_title
+    font-family: $bold
+    font-size: 30px
+    color: $fontBlack
+    text-align: center
+    margin-bottom: 35px
+    +respond-to(480)
+      font-size: 24px
+  &_form
+    width: 85%
+    margin: 0 auto
+    +respond-to(540)
+      width: 95%
+    +respond-to(480)
+      width: 98%
+  &_box
+    display: block
+    margin-bottom: 20px
+    &-subm
+      margin-top: 70px
+      +respond-to(480)
+        margin-top: 90px
+  &_label
+    font-family: $semi
+    font-size: 24px
+    color: $fontBlack
+    +respond-to(480)
+      display: none
+  &_input
+    width: 272px
+    height: 36px
+    float: right
+    padding-left: 15px
+    +respond-to(480)
+      width: 100%
+      margin-bottom: 20px
+  &_area
+    width: 272px
+    height: 72px
+    float: right
+    padding-left: 15px
+    +respond-to(480)
+      width: 100%
+  &_subm
+    width: 162px
+    height: 30px
+    background: $white
+    border: 2px solid $fontBlack
+    font-family: $reg
+    font-size: 16px
+    color: $fontBlack
+    display: block
+    margin: 0 auto
+    cursor: pointer
+    transition: .5s ease-in-out
+    &:hover
+      background: $body
+      color: $white
+      border: 2px solid $body
+      transition: .5s ease-in-out
+  &_close
+    display: inline-block
+    width: 32px
+    height: 32px
+    background: url(../img/close_mob.png)
+    position: absolute
+    top: 15px
+    right: 15px
+    cursor: pointer

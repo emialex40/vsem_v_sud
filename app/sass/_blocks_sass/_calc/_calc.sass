@@ -1,0 +1,92 @@
+.calc
+  padding-top: 60px
+  padding-bottom: 30px
+  &_header
+    font-family: $semi
+    font-size: 36px
+    color: $fontBlack
+    padding-left: 32px
+    position: relative
+    width: 90%
+    +respond-to(992)
+      padding-left: 0
+      &:before
+        display: none
+    +respond-to(480)
+      font-size: 24px
+    &:before
+      content: ""
+      width: 25px
+      height: 8px
+      background: $white
+      position: absolute
+      top: 17px
+      left: 0
+    &-txt
+      margin-top: 30px
+      width: 65%
+      strong
+        display: block
+        font-family: $semi
+        font-size: 18px
+        color: $fontBlack
+        padding-bottom: 20px
+      i
+        display: block
+        font-family: $reg
+        font-size: 18px
+        color: $fontBlack
+        padding-bottom: 20px
+  &_title
+    font-family: $semi
+    font-size: 24px
+    color: $fontBlack
+  &_calc
+    margin-top: 30px
+    width: 70%
+  &_box
+    display: block
+    position: relative
+    margin-bottom: 30px
+  &_label
+    display: block
+    font-family: $semi
+    font-size: 18px
+    color: $fontBlack
+    position: relative
+    cursor: pointer
+    padding-left: 40px
+  &_input
+    display: none
+  &_input:checked + .psevdo:before
+    content: ''
+    position: absolute
+    width: 20px
+    height: 20px
+    background: $fontBlack
+    border-radius: 50%
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+  &_inp_box
+    margin-top: 5px
+    margin-left: 40px
+
+.psevdo
+  display: inline-block
+  width: 30px
+  height: 30px
+  position: absolute
+  top: -4px
+  left: 0
+  border: 2px solid $fontBlack
+  border-radius: 50%
+.f_inp1
+  width: 112px
+  height: 30px
+  background: none
+  border: 2px solid $fontBlack
+  padding-left: 10px
+
+.f_inp2
+  @extend .f_inp1

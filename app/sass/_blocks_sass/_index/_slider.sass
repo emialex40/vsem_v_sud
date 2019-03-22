@@ -1,0 +1,129 @@
+.slider
+  padding-top: 30px
+  padding-bottom: 30px
+  &_wrap
+    width: 100%
+  &_header
+    font-family: $semi
+    font-size: 36px
+    color: $fontBlack
+    padding-left: 32px
+    position: relative
+    margin-bottom: 50px
+    +respond-to(992)
+      padding-left: 0
+      &:before
+        display: none
+    +respond-to(640)
+      text-align: center
+    +respond-to(480)
+      font-size: 30px
+    &:before
+      content: ""
+      width: 25px
+      height: 8px
+      background: $white
+      position: absolute
+      top: 17px
+      left: 0
+  &_button
+    width: 100%
+    padding-top: 40px
+  &_btn
+    display: block
+    width: 147px
+    height: 43px
+    font-family: $bold
+    font-size: 18px
+    color: $fontBlack
+    border: 2px solid $fontBlack
+    text-align: center
+    line-height: 43px
+    transition: .5s ease-in-out
+    margin: 0 auto
+    &:hover
+      background: $body
+      border: 2px solid $white
+      color: $white
+      transition: .5s ease-in-out
+  &_text
+    padding: 30px 25px
+    p
+      font-family: $medium
+      font-size: 14px
+      color: $fontBlack
+  &_slick
+    width: 90%
+    margin: 0 auto
+    padding-left: 35px
+  &_item
+    width: 292px
+    height: 220px
+    overflow: hidden
+    //border: 1px solid #adadad
+  &_img
+    width: 295px
+    height: 158px
+    background: url(../img/slider_bg.jpg) no-repeat center center
+    background-size: cover
+    overflow: hidden
+    img
+      object-fit: cover
+  &_bottom
+    background: $blue
+    width: 295px
+    height: 63px
+    padding: 7px 20px
+  &_title
+    font-family: $semi
+    font-size: 18px
+    color: $fontBlack
+  &_desc
+    font-family: $light
+    font-size: 12px
+    color: #686f74
+    position: relative
+    display: block
+    &:before
+      content: ""
+      width: 100%
+      height: 84px
+      position: absolute
+      top: 0
+      left: 0
+      background: linear-gradient(to top, rgba(255,255,255, 2), rgba(255,255,255, 0))
+
+/*======= slider buttons ========*/
+.btn_wrap
+  width: 43px
+  height: 221px
+  position: absolute
+  cursor: pointer
+
+
+.btn_left
+  top: 0
+  left: -55px
+  background: linear-gradient(to right, rgba(0,0,0, 0), rgba(0,0,0, 0.3))
+
+.btn_right
+  top: 0
+  right: -55px
+  background: linear-gradient(to left, rgba(0,0,0, 0), rgba(0,0,0, 0.3))
+.prev
+  width: 23px
+  height: 23px
+  background: url(../img/next_left.png) no-repeat
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: 10px
+
+.next
+  width: 23px
+  height: 23px
+  background: url(../img/next_right.png) no-repeat
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: 10px

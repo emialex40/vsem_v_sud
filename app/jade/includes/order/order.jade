@@ -1,0 +1,142 @@
+section.section.order
+  .container
+    .row
+      .col-lg-12.col-md-12
+        h3.order_header Выписать квитанцию
+        strong.order_title Оформить квитанцию для уплаты госопшлины
+    .row
+      .col-lg-12.col-md-12
+        .order_wrap
+          .order_text
+            p.
+              На настоящей странице Вы можете оформить квитанцию для <a href="#">оплаты госпошлины</a> и
+              распечатать ее для последующей оплаты.
+            p.
+              Для этого, Вам нужно заполнить все поля, расположенные ниже и нажать кнопку
+              "скачать заполненную квитанцию".
+            p.
+              Внимание! Реквизиты, заполненные в квитанции по умолчанию являются
+              демонстративными и не подходят для уплаты госпошлины!
+            p.
+              При заполнении квитанции, введите реквизиты суда, в который вы
+              будете <a href="#">подавать заявление.</a>
+          .order_form_wrap
+            .order_form
+              form#o_form.order_o_form(method="post")
+                .order_table
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_choice") Наименование получателя:
+                    .order_td
+                      select.order_input.js-select(name="order_choice" id="o_choice")
+                        option(value="") Выберите районный суд
+                        option(value='3') Бабушкинский районный суд г. Москвы
+                        option(value='5') Басманный районный суд г. Москвы
+                        option(value='4') Бутырский районный суд г. Москвы
+                        option(value='2') Гагаринский районный суд г. Москвы
+                        option(value='1') Головинский районный суд г. Москвы
+                        option(value='6') Дорогомиловский районный суд г. Москвы
+                        option(value='7') Замоскворецкий районный суд г. Москвы
+                        option(value='8') Зеленоградский районный суд г. Москвы
+                        option(value='9') Зюзинский районный суд г. Москвы
+                        option(value='10') Измайловский районный суд г. Москвы
+                        option(value='11') Коптевский районный суд г. Москвы
+                        option(value='12') Кузьминский районный суд г. Москвы
+                        option(value='13') Кунцевский районный суд г. Москвы
+                        option(value='14') Лефортовский районный суд г. Москвы
+                        option(value='16') Люблинский районный суд г. Москвы
+                        option(value='15') Мещанский районный суд г. Москвы
+                        option(value='17') Нагатинский районный суд г. Москвы
+                        option(value='18') Никулинский районный суд г. Москвы
+                        option(value='19') Останкинский районный суд г. Москвы
+                        option(value='20') Перовский районный суд г. Москвы
+                        option(value='21') Преображенский районный суд г. Москвы
+                        option(value='22') Пресненский районный суд г. Москвы
+                        option(value='23') Савеловский районный суд г. Москвы
+                        option(value='24') Симоновский районный суд г. Москвы
+                        option(value='25') Солнцевский районный суд г. Москвы
+                        option(value='26') Таганский районный суд г. Москвы
+                        option(value='27') Тверской районный суд г. Москвы
+                        option(value='28') Тимирязевский районный суд г. Москвы
+                        option(value='29') Тушинский районный суд г. Москвы
+                        option(value='31') Хамовнический районный суд г. Москвы
+                        option(value='32') Хорошевский районный суд г. Москвы
+                        option(value='30') Черемушкинский районный суд г. Москвы
+                        option(value='33') Чертановский районный суд г. Москвы
+                        option(value='34') Щербинский районный суд г. Москвы
+                        //1
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_kpp") КПП:
+                    .order_td
+                      input#o_kpp.order_input(type="text", name="o_kpp", readonly)
+                  //2
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_inn") ИНН:
+                    .order_td
+                      input#o_inn.order_input(type="text", name="o_inn", readonly)
+                  //3
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_oktmo") Код ОКТМО:
+                    .order_td
+                      input#o_oktmo.order_input(type="text", name="o_oktmo", readonly)
+                  //4
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_numb") Номер счета получателя платежа:
+                    .order_td
+                      input#o_numb.order_input(type="text", name="o_numb", readonly)
+                  //5
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_bank") Наименование Банка:
+                    .order_td
+                      input#o_bank.order_input(type="text", name="o_bank", readonly)
+                  //6
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_bik") БИК:
+                    .order_td
+                      input#o_bik.order_input(type="text", name="o_bik", value="044583001", readonly)
+                  //7
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_pay") Наименование платежа:
+                    .order_td
+                      input#o_pay.order_input(type="text", name="o_pay", value="Госпошлина", readonly)
+                  //8
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_code") Код бюджетной классификации (КБК):
+                    .order_td
+                      input#o_code.order_input(type="text", name="o_code", value="18210803010011000110", readonly)
+                  //9
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_fio") ФИО плательщика* :
+                    .order_td
+                      input#o_fio.order_input(type="text", name="o_fio", required)
+                  //10
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_adress") Адрес Плательшика* :
+                    .order_td
+                      input#o_adress.order_input(type="text", name="o_adress", required)
+                  //11
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_date") Дата:
+                    .order_td
+                      input#o_date.order_input(type="text", name="o_date")
+                  //12
+                  .order_row
+                    .order_td.order_td-first
+                      label.order_label(for="o_sum") Сумма:
+                    .order_td
+                      input#o_sum.order_input(type="text", name="o_sum")
+                  .order_row
+                    .order_td.order_td-first
+                      input.order_submit(type="submit", name="Рассчитать", id="_calc", value="Скачать заполненную квитанцию")
+                    .order_td

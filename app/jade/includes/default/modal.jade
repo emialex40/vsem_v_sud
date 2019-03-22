@@ -1,0 +1,16 @@
+.modal#modal
+  //.modal_close.js-c_close
+  .modal_title
+    span Задать вопрос юристу
+  form#mod.modal_form(method="post")
+    .modal_box
+      label.modal_label(for='c_name') Имя:
+      input#m_name.modal_input.modal_name(type="text", name="name" placeholder="Ваше имя...")
+    .modal_box
+      label.modal_label(for='c_email') E-mail:
+      input#m_email.modal_input.modal_email(type="email", name="email" placeholder="Ваш e-mail...")
+    .modal_box
+      label.modal_label(for='c_name') Вопрос:
+      textarea#m_phone.modal_area(form="mod", name="email" placeholder="Ваш вопрос...")
+    .modal_box.modal_box-subm
+      input.modal_subm.js-subm(type="submit", value="Отправить сообщение")

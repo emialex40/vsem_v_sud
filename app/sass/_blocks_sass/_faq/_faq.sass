@@ -1,0 +1,66 @@
+.faq
+  padding-top: 60px
+  padding-bottom: 60px
+  &_header
+    font-family: $semi
+    font-size: 36px
+    color: $fontBlack
+    padding-left: 32px
+    position: relative
+    +respond-to(992)
+      padding-left: 0
+      &:before
+        display: none
+    +respond-to(480)
+      font-size: 24px
+    &:before
+      content: ""
+      width: 25px
+      height: 8px
+      background: $white
+      position: absolute
+      top: 17px
+      left: 0
+  &_wrap
+    margin-top: 40px
+  &_item
+    width: 80%
+    margin-bottom: 20px
+    +respond-to(992)
+      width: 100%
+  &_qustns
+    width: 100%
+    background: #20658c
+    font-family: $semi
+    font-size: 24px
+    position: relative
+    +respond-to(768)
+      font-size: 18px
+    +respond-to(480)
+      font-size: 16px
+    b
+      font-family: $bold
+      font-size: 50px
+      color: $white
+      cursor: pointer
+      position: absolute
+      top: 0
+      left: 25px
+    p
+      color: $white
+      padding: 15px 15px 15px 80px
+  &_answer
+    display: none
+    width: 100%
+    border: 3px solid #20658c
+    font-family: $reg
+    font-size: 18px
+    padding: 10px 20px 20px
+    +respond-to(480)
+      font-size: 16px
+    p
+      color: #20658c
+      padding-top: 20px
+
+.open
+  display: block

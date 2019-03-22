@@ -1,0 +1,15 @@
+.calc_modal#calc-modal
+  .calc_modal-wrap
+    form.calc_modal-form#cl_form(method="post")
+      .calc_modal-box.js-txt
+        span Сумма государственной пошлины:
+        strong 0
+        input.calc_mobal-hidden.js-hid#cl_hidden(type="hidden", name="cl_hidden")
+      .calc_modal-box
+        p Введите Ваши ФИО или название организации:
+      .calc_modal-box
+        input.calc_modal-input(type="text", name="fio", placeholder="Ваше имя")
+      .calc_modal-box
+        input.calc_modal-input(type="text", name="address", placeholder="Ваш адрес")
+      .calc_modal-box
+        input.calc_modal-submit.js-sbt(type="submit", value="Распечатать квитанцию")

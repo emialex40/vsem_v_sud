@@ -1,0 +1,70 @@
+.author
+  padding-top: 70px
+  padding-bottom: 30px
+  &_wrap
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    +respond-to(992)
+      justify-content: center
+      align-content: center
+  &_img
+    width: 380px
+    height: 497px
+    overflow: hidden
+    position: relative
+    +respond-to(480)
+      width: 250px
+      height: auto
+      img
+        width: 100%
+        object-fit: cover
+      &:after
+        display: none
+    &:after
+      content: ""
+      width: 361px
+      height: 476px
+      background: none
+      border: 22px solid $body
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 1
+    img
+      width: 100%
+      object-fit: cover
+  &_desc
+    width: 62%
+    position: relative
+    +respond-to(1220)
+      width: 55%
+      padding-right: 20px
+    +respond-to(992)
+      margin-top: 50px
+      width: 100%
+      &:after
+        display: none
+    &:after
+      content: ""
+      width: 140px
+      height: 100%
+      background: none
+      border-top: 8px solid $white
+      border-right: 8px solid $white
+      border-bottom: 8px solid $white
+      position: absolute
+      top: 0
+      right: 0
+  &_txt
+    strong
+      font-family: $bold
+      font-size: 18px
+      color: $fontBlack
+    p
+      font-family: $medium
+      font-size: 16px
+      color: $fontBlack
+      padding-bottom: 25px

@@ -1,0 +1,1433 @@
+
+<!----><!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Суды</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqGR1bleVWJ8jDNQqxbjI1x1DucM4qJDc"></script>
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <!--header-->
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="header_logo"><a href="/"><img src="img/logo.png" alt="logo" class="header_logo-img"></a></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+              <div class="header_text">
+                Юридические услуги - помощь при ДТП,
+                разводах, исковые заявления, сопровождение
+                в суде, составление претензии, консультирование.
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="header_info"><a href="tel:+7 (495) 585-82-43" class="header_phone">+7 (495) 585-82-43</a><a href="mailto:info@vsemvsud.ru" class="header_mail">info@vsemvsud.ru</a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="nav"><a href="/" class="nav_logo">VSEMvSUD.ru</a>
+                <ul class="nav_menu">
+                  <li class="nav_menu-item"><a href="/">ГЛАВНАЯ</a></li>
+                  <li class="nav_menu-item"><a href="#">СТАТЬИ<sup>25</sup></a></li>
+                  <li class="nav_menu-item"><a href="#">ОБ АВТОРЕ</a></li>
+                  <li class="nav_menu-item"><a href="#">ЦЕНЫ</a></li>
+                </ul>
+                <div class="nav_humburger js-nav">
+                  <div class="nav_humburger-line js-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--video-->
+      <section class="section count">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <h3 class="count_header">Суды г. Москвы. Список районных<br> судов города Москвы</h3>
+              <div class="count_desc">
+                <p>
+                  Данный модуль отображает всю информацию о судах г. Москвы. Вся собранная информация
+                  своевременно обновляется и является актуальной на сегодняшний день. Все изменения в
+                  районных судах г. Москвы учитываются и своевременно вносятся в информацию о них.
+                  Модуль предназначен для быстро поиска контактов, того или иного суда в Москве и другой
+                  информации о нем.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-18 col-md-12">
+              <div class="count_choice"><strong>Выберите районный суд:</strong></div>
+              <div class="count_select">
+                <select name="order_choice" id="o_choice" class="count_select-sel js-sel">
+                  <option value="">Выберите районный суд</option>
+                  <option value="3">Бабушкинский районный суд г. Москвы</option>
+                  <option value="5">Басманный районный суд г. Москвы</option>
+                  <option value="4">Бутырский районный суд г. Москвы</option>
+                  <option value="2">Гагаринский районный суд г. Москвы</option>
+                  <option value="1">Головинский районный суд г. Москвы</option>
+                  <option value="6">Дорогомиловский районный суд г. Москвы</option>
+                  <option value="7">Замоскворецкий районный суд г. Москвы</option>
+                  <option value="8">Зеленоградский районный суд г. Москвы</option>
+                  <option value="9">Зюзинский районный суд г. Москвы</option>
+                  <option value="10">Измайловский районный суд г. Москвы</option>
+                  <option value="11">Коптевский районный суд г. Москвы</option>
+                  <option value="12">Кузьминский районный суд г. Москвы</option>
+                  <option value="13">Кунцевский районный суд г. Москвы</option>
+                  <option value="14">Лефортовский районный суд г. Москвы</option>
+                  <option value="16">Люблинский районный суд г. Москвы</option>
+                  <option value="15">Мещанский районный суд г. Москвы</option>
+                  <option value="17">Нагатинский районный суд г. Москвы</option>
+                  <option value="18">Никулинский районный суд г. Москвы</option>
+                  <option value="19">Останкинский районный суд г. Москвы</option>
+                  <option value="20">Перовский районный суд г. Москвы</option>
+                  <option value="21">Преображенский районный суд г. Москвы</option>
+                  <option value="22">Пресненский районный суд г. Москвы</option>
+                  <option value="23">Савеловский районный суд г. Москвы</option>
+                  <option value="24">Симоновский районный суд г. Москвы</option>
+                  <option value="25">Солнцевский районный суд г. Москвы</option>
+                  <option value="26">Таганский районный суд г. Москвы</option>
+                  <option value="27">Тверской районный суд г. Москвы</option>
+                  <option value="28">Тимирязевский районный суд г. Москвы</option>
+                  <option value="29">Тушинский районный суд г. Москвы</option>
+                  <option value="31">Хамовнический районный суд г. Москвы</option>
+                  <option value="32">Хорошевский районный суд г. Москвы</option>
+                  <option value="30">Черемушкинский районный суд г. Москвы</option>
+                  <option value="33">Чертановский районный суд г. Москвы</option>
+                  <option value="34">Щербинский районный суд г. Москвы</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="count_map js-map">
+                <div data-count="3" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.6189691338714!2d37.5227490919807!3d55.82450189844295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ5JzI5LjEiTiAzN8KwMzEnMjIuNCJF!5e0!3m2!1sru!2sua!4v1531911104776" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div data-count="5" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d561.0737508559519!2d37.65079508484497!3d55.7707432826217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a7c96717619%3A0x7350b0596bd5061c!2z0JrQsNC70LDQvdGH0LXQstGB0LrQsNGPINGD0LsuLCAxMSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1531912183660" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div data-count="4" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.4858127912944!2d37.56655663492291!3d55.84779400971903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537b1811a1417%3A0x3e78236e19af6dbd!2z0JTQvNC40YLRgNC-0LLRgdC60L7QtSDRiC4sIDU0LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTI3MjM4!5e0!3m2!1sru!2sua!4v1531917157078" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div data-count="2" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.956795181906!2d37.60653831545212!3d55.72450300164233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b0deebb3605%3A0xf5da28141840e78b!2z0YPQuy4g0JTQvtC90YHQutCw0Y8sIDExINC60L7RgNC_0YPRgSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MDQ5!5e0!3m2!1sru!2sua!4v1531917665356" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div data-count="1" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.6189691338714!2d37.5227490919807!3d55.82450189844295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ5JzI5LjEiTiAzN8KwMzEnMjIuNCJF!5e0!3m2!1sru!2sua!4v1531911104776" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div data-count="6" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.9103438284644!2d37.54028349019724!3d55.740602654285034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54be9ae2cbaa5%3A0xeca7de78cfaee11f!2z0KHRgtGD0LTQtdC90YfQtdGB0LrQsNGPINGD0LsuLCAzNiwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMTE2NQ!5e0!3m2!1sru!2sua!4v1531917890209" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div data-count="7" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1060.112057503566!2d37.63710284752477!3d55.73592669086176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LMuINCc0L7RgdC60LLQsCwg0YPQuyDQotCw0YLQsNGA0YHQutCw0Y8sINC00L7QvCAx!5e0!3m2!1sru!2sua!4v1531918054721" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div data-count="8" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1116.2101749368496!2d37.16179581703856!3d55.97674395545046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b515be7d58aed7%3A0xddc8359a0b08b5bb!2z0JfQtdC70LXQvdC-0LPRgNCw0LTRgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQs9C-0YDQvtC00LAg0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531918257641" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="9" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.5691826917523!2d37.57233931150597!3d55.677814177982114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cc736a98d19%3A0xb882fd1ccaecaa22!2z0YPQuy4g0JrRgNC20LjQttCw0L3QvtCy0YHQutC-0LPQviwgMjAvMzAg0LrQvtGA0L_Rg9GBIDQsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTcyMTg!5e0!3m2!1sru!2sua!4v1531918409342" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="10" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.5632210116356!2d37.686449956255196!3d55.774507186163795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5357c62fff457%3A0xc40c6ec47b2eeda0!2z0YPQuy4g0KTRgNC40LTRgNC40YXQsCDQrdC90LPQtdC70YzRgdCwLCAzMiwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNTA4Mg!5e0!3m2!1sru!2sua!4v1531918641733" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="11" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.18889365074!2d37.52052071593331!3d55.82468058057264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54828f581a4d3%3A0xfb50ff06991d68a1!2z0JrQvtC_0YLQtdCy0YHQutC40Lkg0YDQsNC50L7QvdC90YvQuSDRgdGD0LQg0LPQvtGA0L7QtNCwINCc0L7RgdC60LLRiw!5e0!3m2!1sru!2sua!4v1531918818121" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="12" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.9126021143151!2d37.7883824740489!3d55.71537067250051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab59c6fbf658d%3A0x7f65343bf86c3b23!2z0JrRg9C30YzQvNC40L3RgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQsy4g0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531918959525" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="13" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.2473015350656!2d37.408938315452644!3d55.73683200069173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ee0b2422b79%3A0x886c1f3c70e60fe4!2z0JrRg9C90YbQtdCy0YHQutC40Lkg0YDQsNC50L7QvdC90YvQuSDRgdGD0LQg0LMu0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531919050171" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="14" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.650766458732!2d37.66735001545312!3d55.7471966998925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54aeae5a3b563%3A0xafd5cf7246d58c34!2z0JvQtdGE0L7RgNGC0L7QstGB0LrQuNC5INGA0LDQudC-0L3QvdGL0Lkg0YHRg9C0INCzLiDQnNC-0YHQutCy0Ys!5e0!3m2!1sru!2sua!4v1531919134154" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="16" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.359794566446!2d37.78250281544946!3d55.66534330620204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab42429f5d467%3A0xdad5818a8595f8e7!2z0JvRjtCx0LvQuNC90YHQutC40Lkg0YDQsNC50L7QvdC90YvQuSDRgdGD0LQg0LPQvtGA0L7QtNCwINCc0L7RgdC60LLRiw!5e0!3m2!1sru!2sua!4v1531919276505" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="15" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1497.7408702674243!2d37.68562554932674!3d55.774554423929274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a7700000001%3A0xab6dd2c511d11498!2z0JzQtdGJ0LDQvdGB0LrQuNC5INGA0LDQudC-0L3QvdGL0Lkg0YHRg9C0INCz0L7RgNC-0LTQsCDQnNC-0YHQutCy0Ys!5e0!3m2!1sru!2sua!4v1531919412064" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="17" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.592505251515!2d37.623093015449264!3d55.661296206513846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab340a0ab7297%3A0xf1848ee2e578f443!2z0J3QsNCz0LDRgtC40L3RgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQsy4g0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531919535393" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="18" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.6460633017878!2d37.50681521545079!3d55.6951410039058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54c460e2d47ad%3A0x29a584b6ecd80544!2z0J3QuNC60YPQu9C40L3RgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQsy4g0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531919678720" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="19" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.214160997497!2d37.62521331545663!3d55.82424199394796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b536719e528e0f%3A0x6e1c0941313b94ec!2z0J7RgdGC0LDQvdC60LjQvdGB0LrQuNC5INGA0LDQudC-0L3QvdGL0Lkg0YHRg9C0INCzLiDQnNC-0YHQutCy0Ys!5e0!3m2!1sru!2sua!4v1531919830334" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="20" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.182918859695!2d37.7707065154527!3d55.73795070060545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aca9e822f4bed%3A0xe5f093c67269d6d!2z0J_QtdGA0L7QstGB0LrQuNC5INGA0LDQudC-0L3QvdGL0Lkg0YHRg9C0INCzLiDQnNC-0YHQutCy0Ys!5e0!3m2!1sru!2sua!4v1531919982462" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="21" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.0277748452718!2d37.705361965331534!3d55.797937699417254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535a77f262b2d%3A0x72724607428c207a!2z0J_RgNC10L7QsdGA0LDQttC10L3RgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQsy4g0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531920503362" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="22" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.6097012066202!2d37.58112121593097!3d55.76528198055658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a30ecd1aa8d%3A0xc57b24b12817df6f!2z0J_RgNC10YHQvdC10L3RgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQsy4g0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531920763463" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="23" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.7802238532827!2d37.58315071545453!3d55.77968879738617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a21ffdaa74d%3A0x32a9c3f457819877!2z0KHQsNCy0ZHQu9C-0LLRgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQsy4g0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531920837859" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="24" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.32597960465!2d37.657332915451825!3d55.7180869021371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b2e92ca6133%3A0xf2486b90b5fbac6!2z0KHQuNC80L7QvdC-0LLRgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQsy4g0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531921009351" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="25" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.9348549209767!2d37.413164315448974!3d55.655342006972575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5520ae3df45df%3A0xbb166551f1c2d6c9!2z0KHQvtC70L3RhtC10LLRgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQsy4g0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531921139326" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="26" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.125752403682!2d37.66282621545276!3d55.73894400052888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ac2cc5ef4c1%3A0x99faac142d5db5c7!2z0KLQsNCz0LDQvdGB0LrQuNC5INGA0LDQudC-0L3QvdGL0Lkg0YHRg9C0INCzLiDQnNC-0YHQutCy0Ys!5e0!3m2!1sru!2sua!4v1531921270406" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="27" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.1910070500294!2d37.616790015454264!3d55.77255439793654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6b8388246d%3A0x267d22a8ed8d1afc!2z0KLQstC10YDRgdC60L7QuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQsy4g0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531921354747" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="28" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.819027453389!2d37.563962815457636!3d55.84845509207866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537b22733a493%3A0x6e688e4b87ffb303!2z0KLQuNC80LjRgNGP0LfQtdCy0YHQutC40Lkg0KDQsNC50L7QvdC90YvQuSDQodGD0LQ!5e0!3m2!1sru!2sua!4v1531921459099" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="29" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1777.5045218168295!2d37.405331258492126!3d55.85372491965357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5478c964fc2b9%3A0xa5255920d340234a!2z0KLRg9GI0LjQvdGB0LrQuNC5INGA0LDQudC-0L3QvdGL0Lkg0YHRg9C0INCzLiDQnNC-0YHQutCy0Ys!5e0!3m2!1sru!2sua!4v1531921671075" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="31" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1777.5045218168295!2d37.405331258492126!3d55.85372491965357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5478c964fc2b9%3A0xa5255920d340234a!2z0KLRg9GI0LjQvdGB0LrQuNC5INGA0LDQudC-0L3QvdGL0Lkg0YHRg9C0INCzLiDQnNC-0YHQutCy0Ys!5e0!3m2!1sru!2sua!4v1531921671075" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="32" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.581907633104!2d37.47441221545474!3d55.783132897120446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5490264b17d25%3A0xf730bdfb0d258527!2z0KXQvtGA0L7RiNC10LLRgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQs9C-0YDQvtC00LAg0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531921839804" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="30" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.599035027985!2d37.57157401545008!3d55.67857240518273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cc7ce752ba1%3A0xa82751a4f5a6b7df!2z0KfQtdGA0ZHQvNGD0YjQutC40L3RgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INGB0YPQtCDQs9C-0YDQvtC00LAg0JzQvtGB0LrQstGL!5e0!3m2!1sru!2sua!4v1531921968626" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="33" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.1248725877017!2d37.61226541544894!3d55.652037007227214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab322c3771093%3A0x30b7904424a57adf!2z0KfQtdGA0YLQsNC90L7QstGB0LrQuNC5INGA0LDQudC-0L3QvdGL0Lkg0YHRg9C0INCzLiDQnNC-0YHQutCy0Ys!5e0!3m2!1sru!2sua!4v1531922086560" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div data-count="34" class="t_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2259.5031168570404!2d37.57259841544235!3d55.5061833184536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab340a0b5308f%3A0x4132a057373ac02b!2z0KnQtdGA0LHQuNC90YHQutC40Lkg0YDQsNC50L7QvdC90YvQuSDRgdGD0LQg0LMuINCc0L7RgdC60LLRiw!5e0!3m2!1sru!2sua!4v1531922204961" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+              </div>
+              <div class="count_adress js-adr"><strong>Адрес:</strong><span></span></div>
+            </div>
+          </div>
+          <div class="count_info js-count">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="count_schedule">
+                  <div class="count_schedule-title"><strong>График работы суда:</strong></div>
+                  <div class="count_schedule-day">
+                    <ul>
+                      <li><strong>Понедельник:</strong>
+                        <p>с 9.00 до 18.00</p>
+                      </li>
+                      <li><strong>Вторник:</strong>
+                        <p>с 9.00 до 18.00</p>
+                      </li>
+                      <li><strong>Среда:</strong>
+                        <p>с 9.00 до 18.00</p>
+                      </li>
+                      <li><strong>Четверг:</strong>
+                        <p>с 9.00 до 18.00</p>
+                      </li>
+                      <li><strong>Пятница:</strong>
+                        <p>с 9.00 до 16.45</p>
+                      </li>
+                      <li><strong>Обед:</strong>
+                        <p></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div data-count="3" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приёма граждан<br> председателем суда:</strong>
+                    <p>
+                      Понедельник: с 15-00 до 17-00<br>
+                      Четверг с 10-00 до 12-00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>
+                      Приём граждан Председателем<br>
+                      Головинского районного суда:</strong>
+                    <p>
+                      Понедельник: с 16.00 до 18.00<br>
+                      Четвергс: 9.00 до 11.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="5" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приём граждан<br> Председателем суда:</strong>
+                    <p>
+                      Понедельник: с 16.00 до 18.00<br>
+                      Четверг с: 10.00 до 12.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём исковых заявлений<br> ведется судьями:</strong>
+                    <p>
+                      Понедельник: с 14.00 до 18.00<br>
+                      Четвергс: с 09.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="4" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приём граждан<br> Председателем суда:</strong>
+                    <p>
+                      Понедельник: с 16.00 до 18.00<br>
+                      Четверг с: 10.00 до 12.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём исковых заявлений<br> ведется судьями:</strong>
+                    <p>
+                      Понедельник: с 14.00 до 18.00<br>
+                      Четвергс: с 09.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="2" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приём граждан:</strong>
+                    <p>
+                      Понедельник: с 16.00 до 18.00<br>
+                      Четверг: с 9.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём у судей:</strong>
+                    <p>
+                      Понедельник: с 14.00 до 18.00<br>
+                      Четвергс: с 9.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="1" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приём граждан:</strong>
+                    <p>
+                      Понедельник: с 14.00 до 18.00<br>
+                      Четверг: с 9.00 до 13.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём граждан Председателем<br> Головинского районного суда:</strong>
+                    <p>
+                      Понедельник: с 16.00 до 18.00<br>
+                      Четвергс: 9.00 до 11.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="6" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приемные часы председателя::</strong>
+                    <p>
+                      Понедельник: с 14.00 до 18.00<br>
+                      Четверг: с 9.00 до 13.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан<br> в приёмной суда (каб. 117):</strong>
+                    <p>
+                      Понедельник: четверг с 09.00 до 18.00
+                      Четвергс: с 09.00 до 16.45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Прием граждан:</strong>
+                    <p>
+                      понедельник - четверг с 09.00 до 18.00
+                      пятница с 09.00 до 16.45
+                    </p>
+                  </div>
+                </div>
+                <div data-count="7" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приема председателя суда:</strong>
+                    <p>
+                      Понедельник: с 16:00 до 18:00<br>
+                      Четверг: с 09:00 до 11:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приема судей<br> по гражданским делам:</strong>
+                    <p>
+                      Понедельник: четверг с 14:00 до 18:00<br>
+                      Четвергс: с 09:00 до 13:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Документы подаются в экспедицию</strong>
+                    <p>
+                      понедельник - четверг с 09.00 до 18.00,<br>
+                      в пятницу с 9:00 до 16:45.
+                    </p>
+                  </div>
+                </div>
+                <div data-count="8" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приема<br> председателя суда:</strong>
+                    <p>
+                      Понедельник: с 16:00 до 18:00<br>
+                      Четверг: с 9:00 до 11:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан<br> судьями по гражданским делам</strong>
+                    <p>
+                      Понедельник: с 14:00 до 18:00<br>
+                      Четвергс: с 9:00 до 13:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Судьи по уголовным делам приём не ведут.</strong></div>
+                </div>
+                <div data-count="9" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приема<br> председателя суда:</strong>
+                    <p>
+                      Понедельник: с 16:00 до 18:00<br>
+                      Четверг: с 9:00 до 11:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём граждан<br> судьями районного суда:</strong>
+                    <p>
+                      Понедельник: с 14.00 до 18.00<br>
+                      Четвергс: с 9.00 до 13.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём документов осуществляется<br> общественной приемной<br> (каб. №15, 1 эт.)</strong>
+                    <p>
+                      с понедельника по четверг - с 9.00 до 17.45<br>
+                      пятница - с 9.00 до 16.30
+                    </p>
+                  </div>
+                </div>
+                <div data-count="10" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приема<br> председателя суда:</strong>
+                    <p>
+                      Понедельник: с 14.00 до 16.00<br>
+                      Четверг: с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Прием граждан судьями:</strong>
+                    <p>
+                      Понедельник: с 14.00 до 18.00<br>
+                      Четвергс: с 09.00 до 13.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Прием Канцелярией по гражданским делам:</strong>
+                    <p>
+                      с понедельника по четверг: с 09.00 до 18.00<br>
+                      Пятница: с 09.00 до 16.45
+                    </p>
+                  </div>
+                </div>
+                <div data-count="11" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приема:</strong>
+                    <p>
+                      Понедельник: с 14.00 до 18.00<br>
+                      Четверг: с 09.00 до 11.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="12" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан<br> председателем суда:</strong>
+                    <p>
+                      Понедельник: с 15:00 до 17:00<br>
+                      Четверг: с 09:00 до 11:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма судей<br> по гражданским делам:</strong>
+                    <p>
+                      Понедельник: с 14:00 до 18:00<br>
+                      Четверг: с 9:00 до 13:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Судьи по уголовным делам приёма граждан не ведут.</strong></div>
+                  <div class="count_time-sub"><strong>Часы приёма<br> гражданской канцелярии: (каб. № 14)</strong>
+                    <p>
+                      С понедельника по четверг с 9:00 до 18:00<br>
+                      Пятница с 9:00 до 16:45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма<br> архива: (каб. № 19)</strong>
+                    <p>
+                      Понедельник – четверг с 9:00 до 18:00<br>
+                      Пятница с 9:00 до 16:45
+                    </p>
+                  </div>
+                </div>
+                <div data-count="13" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приёма Председателем суда:</strong>
+                    <p>
+                      Понедельник: с 16.00 до 18.00<br>
+                      Четверг: с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан<br> в приёмной суда (каб.№102):</strong>
+                    <p>
+                      Понедельник-четверг с 09.00 до 18.00,<br>
+                      Пятница с 09.00 до 16.45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан архивом суда (каб. № 123):</strong>
+                    <p>
+                      понедельник-четверг с 09.00 до 18.00,<br>
+                      пятница с 09.00 до 16.45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан<br> канцелярией по гражданским делам (каб. № 124):</strong>
+                    <p>
+                      С понедельника по четверг с 9:00 до 18:00<br>
+                      Пятница с 9:00 до 16:45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приема граждан<br> канцелярией по уголовным делам (каб. № 121):</strong>
+                    <p>
+                      понедельник-четверг с 09.00 до 18.00,<br>
+                      пятница с 09.00 до 16.45
+                    </p>
+                  </div>
+                </div>
+                <div data-count="14" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы работы гражданской (каб. № 55)<br> и уголовной (каб. № 7) канцелярий суда:</strong>
+                    <p>
+                      Понедельник-четверг с 09:00 до 18:00<br>
+                      Пятница с 09:00 до 16:45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём граждан председателем суда:</strong>
+                    <p>
+                      Понедельник с 14:00 до 16:00<br>
+                      Четверг с 10:00 до 12:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан архивом суда (каб. № 123):</strong>
+                    <p>
+                      понедельник-четверг с 09.00 до 18.00,<br>
+                      пятница с 09.00 до 16.45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>приём граждан судьями:</strong>
+                    <p>
+                      Понедельник с 14:00 до 18:00<br>
+                      Четверг с 09:00 до 13:00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="16" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приема председателя суда</strong>
+                    <p>
+                      Понедельник с 15:00 до 17:00<br>
+                      Четверг с 09:00 до 11:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приема судей по гражданским делам</strong>
+                    <p>
+                      Понедельник с 14:00 до 18:00<br>
+                      Четверг с 09:00 до 13:00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="15" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Отдел по обеспечению судопроизводства<br> по уголовным делам (кабинет №58)</strong>
+                    <p>
+                      Понедельник-Четверг 09.00-17.45<br>
+                      Пятница 09.00-16.30
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Отдел по обеспечению судопроизводства<br> по гражданским делам (кабинет №56)</strong>
+                    <p>
+                      Понедельник-Четверг 09.00 - 17.45<br>
+                      Пятница 09.00 - 16.30<br>
+                      Выдача документов: с 10.00 до 16.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Отдел по<br> Административным делам<br> (кабинет №30)</strong>
+                    <p>
+                      Понедельник-Четверг 09.00 - 17.45<br>
+                      Пятница 09.00 - 16.30
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Экспедиция (кабинет №54)</strong>
+                    <p>
+                      Понедельник-Четверг 09.00 - 17.45<br>
+                      Пятница 09.00 - 16.30
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приемная (кабинет №25)</strong>
+                    <p>
+                      Понедельник-Четверг 09.00 - 17.45<br>
+                      Пятница 09.00 - 16.30
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Архив</strong>
+                    <p>
+                      Понедельник-Четверг 09.00 - 17.45<br>
+                      Пятница 09.00 - 16.30<br>
+                      выдача документов:<br>
+                      Понедельник с 14.00 до 18.00<br>
+                      Четверг с 9.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="17" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приёма Председателем суда</strong>
+                    <p>
+                      Понедельник с 16:00 до 18:00<br>
+                      Четверг с 09:00 до 11:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приема судей по гражданским делам</strong>
+                    <p>
+                      Понедельник с 14:00 до 18:00<br>
+                      Пятница 09.00 - 16.30<br>
+                      Четверг с 09:00 до 13:00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="18" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приемные время федеральных судий:</strong>
+                    <p>
+                      Понедельник с 14:00 до 18:00<br>
+                      Четверг с 9:00 до 14:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приемное время председателя суда:</strong>
+                    <p>Понедельник в течении рабочего дня</p>
+                  </div>
+                </div>
+                <div data-count="19" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приёма председателем суда:</strong>
+                    <p>
+                      Понедельник с 16.00 до 18.00<br>
+                      Четверг с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан в приёмной суда:</strong>
+                    <p>
+                      Понедельник-четверг с 09.00 до 18.00<br>
+                      Пятница с 09.00 до 16.45
+                    </p>
+                  </div>
+                </div>
+                <div data-count="20" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приемная председателя:</strong>
+                    <p>
+                      ПН 14:00 – 16:00<br>
+                      ЧТ 10:00 - 12:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Прием исковых заявлений районными судьями:</strong>
+                    <p>
+                      ПН 14:00 - 18:00<br>
+                      ЧТ 9:00 - 13:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Канцелярия по гражданским делам:</strong>
+                    <p>
+                      ПН, ВТ,СР, ЧТ – 9:00-18:00<br>
+                      ПТ – 9:00-16:45
+                    </p>
+                  </div>
+                </div>
+                <div data-count="21" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан председателем суда :</strong>
+                    <p>
+                      Понедельник с 15:00 до 17:00<br>
+                      Четверг с 09:00 до 11:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приема архива:</strong>
+                    <p>
+                      Понедельник – четверг с 9:00 до 18:00<br>
+                      Пятница с 9:00 до 16:45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан федеральными<br> судьями по гражданским делам</strong>
+                    <p>
+                      Понедельник с 14:00 до 18:00<br>
+                      Четверг с 9:00 до 13:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Федеральные судьи по уголовным делам прием не ведут</strong></div>
+                </div>
+                <div data-count="22" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Прием граждан судьями:</strong><strong>Прием исковых заявлений<br> осуществляется на приеме у судьи!</strong>
+                    <p>
+                      Понедельник с 14.00 до 18.00<br>
+                      Четверг с 09.00 до 13.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Прием Канцелярией<br> по гражданским делам:</strong>
+                    <p>
+                      с понедельника по четверг: с 09.00 до 18.00<br>
+                      Пятница: с 09.00 до 16.45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Прием Канцелярией<br> по уголовным делам:</strong>
+                    <p>
+                      с понедельника по четверг: с 09.00 до 18.00<br>
+                      Пятница: с 09.00 до 16.45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Архив:</strong><strong>прием граждан, подача заявок на получение копий из материалов дела</strong>
+                    <p>понедельник с 14.00 до 18.00</p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём председателем суда</strong>
+                    <p>
+                      понедельник 16:00-18:00<br>
+                      четверг 9:00-11:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Выдача исполнительных листов</strong>
+                    <p>
+                      понедельник 14:00-18:00<br>
+                      четверг 9:00-13:00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="23" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приёма Председателем суда</strong>
+                    <p>
+                      Понедельник с 16.00 до 18.00<br>
+                      Четверг с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан федеральными судьями</strong>
+                    <p>
+                      Понедельник с 14.00 до 18.00,<br>
+                      Четверг с 09.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="24" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приема председателя суда:</strong>
+                    <p>
+                      Понедельник с 16.00 до 18.00,<br>
+                      Четверг с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приема судей:</strong>
+                    <p>
+                      Понедельникс 14.00 до 18.00<br>
+                      Четверг с 09.00 до 13.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приема уголовной канцелярии:</strong>
+                    <p>
+                      Понедельник с 14.00 до 18.00,<br>
+                      Четверг с 09.00 до 13.00.
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приема<br> гражданской канцелярии::</strong>
+                    <p>
+                      понедельник - четверг с 09.00 до 18.00,<br>
+                      пятница с 09.00 до 16.45.
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы работы<br> архива суда:</strong>
+                    <p>
+                      понедельник с 14.00 до 18.00,<br>
+                      четверг с 09.00 до 13.45.
+                    </p>
+                  </div>
+                </div>
+                <div data-count="25" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>прием председателя суда:</strong>
+                    <p>
+                      Понедельник с 16.00 до 18.00<br>
+                      Четверг с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Прием федеральными судьями:</strong>
+                    <p>
+                      Понедельникс с 14.00 до 18.00<br>
+                      Четверг с 09.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="26" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>часы приема канцелярии суда:</strong>
+                    <p>
+                      Понедельник - четверг с 9:00 до 18:00<br>
+                      Пятница с 9:00 до 16:45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан<br> председателем суда: (каб. № 314)</strong>
+                    <p>
+                      Понедельникс с 16:00 до 17:30<br>
+                      Четверг с 10:30 до 12:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма<br> исковых заявлений: (каб. № 307)</strong>
+                    <p>
+                      Понедельник с 14:00 до 18:00<br>
+                      Четверг с 9:00 до 13:00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="27" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы Приема судьями<br> исковых заявлений:</strong>
+                    <p>
+                      Понедельник с 14.00 до 18.00<br>
+                      Четверг с 9.00 до 13.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приема<br> председателя суда:</strong>
+                    <p>
+                      Понедельникс с 16:00 до 17:30<br>
+                      Четверг с 10:30 до 12:00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма<br> исковых заявлений: (каб. № 307)</strong>
+                    <p>
+                      Понедельник с 16.00 - 18.00<br>
+                      Четверг с 9.00 - 11.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="28" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приём граждан Председателем суда</strong>
+                    <p>
+                      Понедельник с 16.00 до 18.00<br>
+                      Четверг с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём граждан федеральными<br> судьями по гражданским делам</strong>
+                    <p>
+                      Понедельникс с 16:00 до 17:30<br>
+                      Четверг с 09.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="29" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приём граждан Председателем суда</strong>
+                    <p>
+                      Понедельник с 16.00 до 18.00<br>
+                      Четверг с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Приём граждан федеральными<br> судьями по гражданским делам</strong>
+                    <p>
+                      Понедельникс с 14:00 до 18:00<br>
+                      Четверг с 09:00 до 13:00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="31" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приём граждан Председателем суда</strong>
+                    <p>
+                      Понедельник с 16.00 до 18.00<br>
+                      Четверг с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приёма граждан<br> федеральными и мировыми судьями:</strong>
+                    <p>
+                      Понедельникс с 14:00 до 18:00<br>
+                      Четверг с 09:00 до 13:00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="32" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>прием документов осуществляется<br> в приемной суда (кабинет № 101 этаж 1)</strong>
+                    <p>
+                      с понедельника по четверг - с 9.00 до 18.00<br>
+                      пятница - с 9.00 до 16.45
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Выдаче дел для ознакомления,<br> а так же решений осуществляется канцеляриями суда:</strong>
+                    <p>
+                      с понедельника по четверг: с 9:00 до 17:50<br>
+                      в пятницу: с 09:00 до 16:35
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Выдача документов из архива осуществляется:</strong>
+                    <p>
+                      с понедельника по четверг: с 09:00 до 17:50<br>
+                      в пятницу: с 09:00 до 16:35
+                    </p>
+                  </div>
+                </div>
+                <div data-count="30" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Приём у судей:</strong>
+                    <p>
+                      понедельник - с 14.00 до 18.00<br>
+                      четверг - с 9.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="33" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приема председателем суда:</strong>
+                    <p>
+                      Понедельник с 16.00 до 18.00<br>
+                      Четверг с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приему судьями<br> по гражданским делам:</strong>
+                    <p>
+                      Понедельник с 14.00 до 18.00<br>
+                      Четверг с 09.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+                <div data-count="34" class="count_time">
+                  <div class="count_time-title"><strong>Приемное время:</strong></div>
+                  <div class="count_time-sub"><strong>Часы приема председателем суда:</strong>
+                    <p>
+                      Понедельник с 16.00 до 18.00<br>
+                      Четверг с 09.00 до 11.00
+                    </p>
+                  </div>
+                  <div class="count_time-sub"><strong>Часы приему судьями<br> по гражданским делам:</strong>
+                    <p>
+                      Понедельник с 14.00 до 18.00<br>
+                      Четверг с 09.00 до 13.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div data-count="3" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемной председателя:</strong>
+                    <p>8 (495) 471-26-66</p><strong>Гражданской канцелярии:</strong>
+                    <p>8 (495) 471-06-77</p><strong>Уголовной канцелярии:</strong>
+                    <p>8 (495) 471-06-33</p><strong>Экпедиции:</strong>
+                    <p>8 (495) 471-04-88</p><strong>Архив:</strong>
+                    <p>8 (495) 471-06-44</p>
+                  </div>
+                </div>
+                <div data-count="5" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>приёмная председателя суда</strong>
+                    <p>тел./факс (499) 975-54-65</p><strong>канцелярия по гражданским<br> делам, экспедиция</strong>
+                    <p>(499) 975-38-67</p><strong>канцелярия по уголовным делам<br> и делам об административных правонарушениях:</strong>
+                    <p>(499) 975-39-29</p><strong>Экпедиции:</strong>
+                    <p>8 (495) 471-04-88</p><strong>Архив:</strong>
+                    <p>(499) 975-52-61</p><strong>электронная почта суда</strong><a href="mailto:basmanny.msk@sudrf.ru">basmanny.msk@sudrf.ru</a>
+                  </div>
+                </div>
+                <div data-count="4" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>приемная председателя суда</strong>
+                    <p>(495) 482-52- 83</p><strong>гражданская канцелярия</strong>
+                    <p>(495) 482-12-76</p><strong>уголовная канцелярия:</strong>
+                    <p>(495) 482-20- 84</p><strong>Экпедиция:</strong>
+                    <p>(495) 482-30-00</p><strong>Архив:</strong>
+                    <p>(495) 488-71-03</p>
+                  </div>
+                </div>
+                <div data-count="2" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>приёмная</strong>
+                    <p>
+                      телефон 8 495 959-82-60
+                      факс 8 495 959-82-60
+                    </p><strong>гражданская канцелярия</strong>
+                    <p>8 495 236-75-86,<br> 8 495 959-82-29</p><strong>уголовная канцелярия:</strong>
+                    <p>8 495 959-81-96</p><strong>Экпедиция:</strong>
+                    <p>(495) 8 495 236-49-21</p>
+                  </div>
+                </div>
+                <div data-count="1" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>приёмная</strong>
+                    <p>
+                      телефон 8 495 959-82-60
+                      факс 8 495 959-82-60
+                    </p><strong>Канцелярия по гражданским делам</strong>
+                    <p>450-47-93</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>450-44-29</p><strong>Экпедиция:</strong>
+                    <p>450-28-14</p><strong>Архив:</strong>
+                    <p>450-42-39</p>
+                  </div>
+                </div>
+                <div data-count="6" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Председатель суда:</strong>
+                    <p>(499)766-13-41</p><strong>Канцелярия по гражданским делам</strong>
+                    <p>(499) 766-10-39<br> (499) 766-10-53</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>(499) 766-18-52<br> (499) 766-18-48</p><strong>Экпедиция:</strong>
+                    <p>тел/факс (499) 766-18-39</p><strong>Архив:</strong>
+                    <p>(499) 766-19-07</p>
+                  </div>
+                </div>
+                <div data-count="7" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя:</strong>
+                    <p>тел./факс 951-77-67</p><strong>Канцелярия по гражданским делам</strong>
+                    <p>тел. 953-55-60,<br> факс 953-67-84</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>тел. 951-75-58,<br> факс 953-67-82</p><strong>Административные дела (каб. 208)</strong>
+                    <p>951-75-58</p><strong>Экпедиция:</strong>
+                    <p>тел/факс 951-69-50</p><strong>Архив:</strong>
+                    <p>(499) 951-09-13</p>
+                  </div>
+                </div>
+                <div data-count="8" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя:</strong>
+                    <p>т./ф. 8-499-729-99-85</p><strong>Канцелярия по гражданским делам</strong>
+                    <p>8-499-729-94-35</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>8-499-72993-76</p><strong>Административные дела (каб. 208)</strong>
+                    <p>951-75-58</p><strong>Экпедиция:</strong>
+                    <p>8-499-729-96-34</p><strong>Архив:</strong>
+                    <p>8-499-729-93-97</p>
+                  </div>
+                </div>
+                <div data-count="9" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Общественная приемная<br> (для подачи документов)</strong>
+                    <p>8 499 124-24-88</p><strong>приёмная</strong>
+                    <p>8-499-729-94-35</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>8-499-72993-76</p><strong>гражданская канцелярия</strong>
+                    <p>8 499 124-69-77</p>
+                  </div>
+                </div>
+                <div data-count="10" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя суда</strong>
+                    <p>8-499-261-51-08</p><strong>приёмная</strong>
+                    <p>8-499-729-94-35</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>8-499-261-45-21</p><strong>Гражданская канцелярия</strong>
+                    <p>8 499 124-69-77</p><strong>Экспедиция:</strong>
+                    <p>(телефон/факс) 8-499-261-45-63</p><strong>Гражданская канцелярия</strong>
+                    <p>8-499-261-78-12</p>
+                  </div>
+                </div>
+                <div data-count="11" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя суда</strong>
+                    <p>8 (499) 150-92-35</p><strong>Приемная заместителя Председателя суда:</strong>
+                    <p>8 (499) 150-92-32</p><strong>Пресс-секретарь:</strong>
+                    <p>8 (499) 150-92-35</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>(Телефон / факс): 8 (495) 450-45-79</p><strong>Гражданская канцелярия</strong>
+                    <p>(Телефон / факс): 8 (495) 450-45-78</p><strong>Экспедиция:</strong>
+                    <p>8 (495) 450-04-69</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (495) 450-09-05</p>
+                  </div>
+                </div>
+                <div data-count="12" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя суда</strong>
+                    <p>(495) 919-17-71</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>(495) 378-11-18</p><strong>Гражданская канцелярия</strong>
+                    <p>(495) 379-61-78</p><strong>Архив:</strong>
+                    <p>(495) 379-64-24</p><strong>Экспедиция:</strong>
+                    <p>(495) 657-79-84</p>
+                  </div>
+                </div>
+                <div data-count="13" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приёмная суда:</strong>
+                    <p>416-62-40</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>416-62-28</p><strong>Гражданская канцелярия</strong>
+                    <p>416-62-17</p><strong>Архив:</strong>
+                    <p>416-62-30</p><strong>Экспедиция:</strong>
+                    <p>416-62-50</p>
+                  </div>
+                </div>
+                <div data-count="14" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Администратор:</strong>
+                    <p>8 (495) 912-82-71</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>8 (495) 912-07-50</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (495) 912-48-16</p><strong>Архив:</strong>
+                    <p>8 (495) 678-45-14</p><strong>Экспедиция:</strong>
+                    <p>8 (495) 912-78-86</p>
+                  </div>
+                </div>
+                <div data-count="16" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Канцелярия по уголовным делам</strong>
+                    <p>тел., факс 8 (499) 784-76-30</p><strong>Гражданская канцелярия</strong>
+                    <p>тел. 8 (499) 784-76-20<br> факс 8 (499) 784-76-21</p><strong>Архив:</strong>
+                    <p>тел., факс 8 (499) 784-75-90</p><strong>Экспедиция:</strong>
+                    <p>тел. 8 (499) 784-76-40</p>
+                  </div>
+                </div>
+                <div data-count="15" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя</strong>
+                    <p>8 (495) 680 18 88</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>8 (495) 680-19-79<br> факс.: 8 (495) 680-80-83</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (495) 680-26-97</p><strong>Отдел по административным делам:</strong>
+                    <p>8 (495) 680-26-97</p><strong>Приемная</strong>
+                    <p>8 (495) 680-18-88</p><strong>Экспедиция:</strong>
+                    <p>тел. 8 (495) 680-23-79</p>
+                  </div>
+                </div>
+                <div data-count="17" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя</strong>
+                    <p>(499) 613-80-80</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>(499) 613-99-16</p><strong>Гражданская канцелярия</strong>
+                    <p>(499) 782-80-15<br> 782-84-61</p><strong>Экспедиция:</strong>
+                    <p>(499) 782-80-14<br> 782-84-60</p>
+                  </div>
+                </div>
+                <div data-count="18" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя</strong>
+                    <p>8 (499)739-31-80</p><strong>Начальник отдела:</strong>
+                    <p>8 (499) 739-31-49</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>8 (499) 739-31-50</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (499) 739-31-78</p><strong>Экспедиция:</strong>
+                    <p>8 (499) 739-31-51</p>
+                  </div>
+                </div>
+                <div data-count="19" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Архив</strong>
+                    <p>8 (495) 602-49-74</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>8 (495) 602-49-87</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (495) 602-49-75</p><strong>Экспедиция:</strong>
+                    <p>8 (495) 602-49-73</p>
+                  </div>
+                </div>
+                <div data-count="20" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Консультант суда</strong>
+                    <p>8 (499) 748-78-86</p><strong>Архив</strong>
+                    <p>8 (495) 602-49-74</p><strong>Канцелярия по уголовным делам</strong>
+                    <p>8 (499) 748-67-22</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (499) 748-67-00</p><strong>Экспедиция:</strong>
+                    <p>8 (499) 748-71-88</p>
+                  </div>
+                </div>
+                <div data-count="21" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя</strong>
+                    <p>тел/факс: (495)652-85-24;<br> (495)652-85-29</p><strong>Архив</strong>
+                    <p>8 (499) 748-11-47</p><strong>Канцелярия по уголовным<br> и административным делам:</strong>
+                    <p>8 (499) 748-10-93,<br> 8 (495) 652-89-15</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (495) 652-88-24,<br> 8 (495) 652-88-93</p><strong>Экспедиция:</strong>
+                    <p>8 (499) 748-10-97</p>
+                  </div>
+                </div>
+                <div data-count="22" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub">
+                    <!--strong Приемная председателя-->
+                    <!--p тел/факс: (495)652-85-24;<br> (495)652-85-29-->
+                    <!--strong Архив-->
+                    <!--p 8 (499) 748-11-47-->
+                    <!--strong Канцелярия по уголовным<br> и административным делам:-->
+                    <!--p 8 (499) 748-10-93,<br> 8 (495) 652-89-15-->
+                    <!--strong Гражданская канцелярия-->
+                    <!--p 8 (495) 652-88-24,<br> 8 (495) 652-88-93-->
+                    <!--strong Экспедиция:-->
+                    <!--p 8 (499) 748-10-97-->
+                  </div>
+                </div>
+                <div data-count="23" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя</strong>
+                    <p>8 (499) 250-40-31</p><strong>Канцелярия по уголовным<br> и административным делам:</strong>
+                    <p>8 (499) 251-03-98</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (499) 250-58-47</p><strong>Архив</strong>
+                    <p>8 (499) 748-11-47</p>
+                  </div>
+                </div>
+                <div data-count="24" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная председателя</strong>
+                    <p>8 (499) 250-40-31</p><strong>Канцелярия по уголовным<br> и административным делам:</strong>
+                    <p>тел. 675-03-88<br> факс 675-04-88</p><strong>Гражданская канцелярия</strong>
+                    <p>тел. 675-38-33<br> факс 675-36-55</p><strong>Канцелярия<br> по административным делам</strong>
+                    <p>тел./факс 675-36-99</p><strong>Экспедиция</strong>
+                    <p>675-37-99</p><strong>Архив</strong>
+                    <p>675-51-75</p>
+                  </div>
+                </div>
+                <div data-count="25" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная суда</strong>
+                    <p>435-93-16</p><strong>Уголовная канцелярия:</strong>
+                    <p>439-68-47</p><strong>Гражданская канцелярия</strong>
+                    <p>435-53-13</p><strong>Экспедиция</strong>
+                    <p>435- 63-62</p>
+                  </div>
+                </div>
+                <div data-count="26" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная Председателя суда</strong>
+                    <p>911-03-85</p><strong>Уголовная канцелярия:</strong>
+                    <p>911-71-19</p><strong>Гражданская канцелярия</strong>
+                    <p>912-49-42</p><strong>Экспедиция, архив:</strong>
+                    <p>911-12-89</p><strong>Администратор суда</strong>
+                    <p>911-70-96</p>
+                  </div>
+                </div>
+                <div data-count="27" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная Председателя суда</strong>
+                    <p>911-03-85</p><strong>Уголовная канцелярия:</strong>
+                    <p>694-09-16</p><strong>Гражданская канцелярия</strong>
+                    <p>694-09-17</p><strong>Экспедиция</strong>
+                    <p>694-04-95</p><strong>Архив</strong>
+                    <p>694-07-62</p><strong>Канцелярия по административным делам</strong>
+                    <p>694-05-89</p><strong>Канцелярия по административным делам</strong>
+                    <p>694-09-24</p>
+                  </div>
+                </div>
+                <div data-count="28" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приемная суда</strong>
+                    <p>(499) 745-44-28</p><strong>Уголовная канцелярия:</strong>
+                    <p>тел.: 482-30-36<br> факс: 482-21-85</p><strong>Гражданская канцелярия</strong>
+                    <p>тел.: 482-30-36<br> факс: 482-21-85</p><strong>Экспедиция</strong>
+                    <p>482-16-74</p><strong>Архив</strong>
+                    <p>482-16-74</p>
+                  </div>
+                </div>
+                <div data-count="29" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Уголовная канцелярия:</strong>
+                    <p>491-00-01</p><strong>Гражданская канцелярия</strong>
+                    <p>491-36-74</p><strong>Экспедиция</strong>
+                    <p>490-55-92</p><strong>Отдел выдачи<br> исполнительных листов:</strong>
+                    <p>491-00-09</p>
+                  </div>
+                </div>
+                <div data-count="31" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Уголовная канцелярия:</strong>
+                    <p>(499) 248-68-26</p><strong>Гражданская канцелярия</strong>
+                    <p>(499) 248-66-11</p><strong>Экспедиция</strong>
+                    <p>(499) 248-63-21</p><strong>Архив</strong>
+                    <p>(499) 248-31-93</p>
+                  </div>
+                </div>
+                <div data-count="32" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приёмная председателя суда</strong>
+                    <p>телефон 8 (499) 124-45-85<br> факс: 8 (499) 125-88-00</p><strong>Уголовная канцелярия:</strong>
+                    <p>8 (499) 124-31-24</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (499) 124-31-37</p><strong>Административная канцелярия</strong>
+                    <p>8 (499) 125-25-81</p>
+                  </div>
+                </div>
+                <div data-count="30" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Приёмная председателя суда</strong>
+                    <p>телефон 8 (499) 124-45-85<br> факс: 8 (499) 125-88-00</p><strong>Уголовная канцелярия:</strong>
+                    <p>8 (499) 124-31-24</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (499) 124-31-37</p><strong>Административная канцелярия</strong>
+                    <p>8 (499) 125-25-81</p>
+                  </div>
+                </div>
+                <div data-count="33" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub"><strong>Председатель суда:</strong>
+                    <p>Тел/ Факс: 8 (499) 794-08-58</p><strong>Уголовная канцелярия:</strong>
+                    <p>8 (499) 794-00-09</p><strong>Гражданская канцелярия</strong>
+                    <p>8 (499) 794-03-96</p><strong>Административная канцелярия</strong>
+                    <p>8 (499) 610-85-08</p><strong>Архив:
+                      <p>8 (499) 794-09-32</p></strong><strong>Экспедиция
+                      <p>8 (499) 610-84-08</p></strong>
+                  </div>
+                </div>
+                <div data-count="34" class="count_phones">
+                  <div class="count_phones-title"><strong>Телефоны:</strong></div>
+                  <div class="count_phones-sub">
+                    <!--strong Председатель суда:-->
+                    <!--p Тел/ Факс: 8 (499) 794-08-58-->
+                    <!--strong Уголовная канцелярия:-->
+                    <!--p 8 (499) 794-00-09-->
+                    <!--strong Гражданская канцелярия-->
+                    <!--p 8 (499) 794-03-96-->
+                    <!--strong Административная канцелярия-->
+                    <!--p 8 (499) 610-85-08-->
+                    <!--strong Архив:-->
+                    <!--  p 8 (499) 794-09-32-->
+                    <!--strong Экспедиция-->
+                    <!--  p 8 (499) 610-84-08-->
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="video_buttons"><a href="javascript:;" data-fancybox data-src="#modal"><span class="video_icon1">Задать вопрос юристу</span></a><a href="#"><span class="video_icon2">Услуги и Цены</span></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--slider_text-->
+      <section class="section bottom_text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="slider_text">
+                <p>
+                  Данная информация собрана в результаты судебной практики, она не устарела и актуальна
+                  на сегодняшний день, так как постоянно обновляется.
+                  Благодаря ей можно  вникнуть в суть судебного разбирательства и правильного
+                  ведения судебных дел.  Однако в делах, где ошибки могут
+                  привести к серьезным последствиям, мы рекомендуем обратиться к нашим юридическим
+                  услугам и доверить ведение дела профессионалам.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3">
+              <div class="footer_logo"><a href="/"><img src="img/logo.png" alt="logo" class="footer_logo-img"></a><a href="/" class="footer_logo-title">VSEMvSUD.ru</a></div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <ul class="footer_list footer_list-left">
+                <li><a href="#">ЗАКОНОДАТЕЛЬСТВО</a></li>
+                <li><a href="#">ОБ АВТОРЕ</a></li>
+                <li><a href="#">ЦЕНЫ НА ЮРИДИЧЕСКИЕ</a></li>
+                <li><a href="#">УСЛУГИ В МОСКВЕ</a></li>
+                <li><a href="#">СТОИМОСТЬ ЧАСТНОГО ЮРИСТА</a></li>
+                <li><a href="#">ПОМОЩЬ</a></li>
+                <li><a href="#">ВСЕ СТАТЬИ</a></li>
+                <li><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <ul class="footer_list footer_list-right">
+                <li><a href="#">ПОЛЕЗНЫЕ СОВЕТЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#">ЮРИСТ НА ДОМ</a></li>
+                <li><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
+                <li><a href="#">БЛОГ</a></li>
+                <li><a href="#">SAM-SEBE-URIST</a></li>
+                <li><a href="#">ПРАЙС-ЛИСТ НА УСЛУГИ РЕГИСТРАЦИИ</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="footer_info">
+                <div class="footer_info-top"><a href="tel:+7 (495) 585-82-43" class="footer_phone">+7 (495) 585-82-43</a><a href="mailto:info@vsemvsud.ru" class="footer_mail">info@vsemvsud.ru</a><a href="javascript:;" data-fancybox data-src="#callback" class="footer_btn js-cbk">Заказать звонок</a></div>
+                <div class="footer_info-center">
+                  <p>г. Москва, Варшавское<br> ш. Д.132 стр. 9, оф. 589</p>
+                </div>
+                <div class="footer_info-bottom">
+                  <ul class="footer_social">
+                    <li><a href="#" class="footer_link footer_link-vk"></a></li>
+                    <li><a href="#" class="footer_link footer_link-fb"></a></li>
+                    <li><a href="#" class="footer_link footer_link-insta"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--mobile slide menu-->
+      <div class="mob">
+        <div class="mob_menu">
+          <div class="mob_menu-close js-close"></div>
+          <div class="mob_menu-list"></div>
+        </div>
+      </div>
+      <!-- callback modal-->
+      <div id="callback" class="callback">
+        <!--.callback_close.js-c_close-->
+        <div class="callback_title"><span>Заказать звонок</span></div>
+        <form id="c_back" method="post" class="callback_form">
+          <div class="callback_box">
+            <label for="c_name" class="callback_label">Имя:</label>
+            <input id="c_name" type="text" name="name" placeholder="Ваше имя..." class="callback_input callback_name">
+          </div>
+          <div class="callback_box">
+            <label for="c_phone" class="callback_label">Телефон:</label>
+            <input id="c_phone" type="tel" name="phone" placeholder="Ваш телефон..." class="callback_input callback_phone">
+          </div>
+          <div class="callback_box callback_box-subm">
+            <input type="submit" value="Отправить" class="callback_subm js-subm">
+          </div>
+        </form>
+      </div>
+      <!--qustions modal-->
+      <div id="modal" class="modal">
+        <!--.modal_close.js-c_close-->
+        <div class="modal_title"><span>Задать вопрос юристу</span></div>
+        <form id="mod" method="post" class="modal_form">
+          <div class="modal_box">
+            <label for="c_name" class="modal_label">Имя:</label>
+            <input id="m_name" type="text" name="name" placeholder="Ваше имя..." class="modal_input modal_name">
+          </div>
+          <div class="modal_box">
+            <label for="c_email" class="modal_label">E-mail:</label>
+            <input id="m_email" type="email" name="email" placeholder="Ваш e-mail..." class="modal_input modal_email">
+          </div>
+          <div class="modal_box">
+            <label for="c_name" class="modal_label">Вопрос:</label>
+            <textarea id="m_phone" form="mod" name="email" placeholder="Ваш вопрос..." class="modal_area"></textarea>
+          </div>
+          <div class="modal_box modal_box-subm">
+            <input type="submit" value="Отправить сообщение" class="modal_subm js-subm">
+          </div>
+        </form>
+      </div>
+      <!--calc modal-->
+      <div id="calc-modal" class="calc_modal">
+        <div class="calc_modal-wrap">
+          <form id="cl_form" method="post" class="calc_modal-form">
+            <div class="calc_modal-box js-txt"><span>Сумма государственной пошлины:</span><strong>0</strong>
+              <input id="cl_hidden" type="hidden" name="cl_hidden" class="calc_mobal-hidden js-hid">
+            </div>
+            <div class="calc_modal-box">
+              <p>Введите Ваши ФИО или название организации:</p>
+            </div>
+            <div class="calc_modal-box">
+              <input type="text" name="fio" placeholder="Ваше имя" class="calc_modal-input">
+            </div>
+            <div class="calc_modal-box">
+              <input type="text" name="address" placeholder="Ваш адрес" class="calc_modal-input">
+            </div>
+            <div class="calc_modal-box">
+              <input type="submit" value="Распечатать квитанцию" class="calc_modal-submit js-sbt">
+            </div>
+          </form>
+        </div>
+      </div>
+      <link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="libs/slick/slick.css">
+      <link rel="stylesheet" href="libs/slick/slick-theme.css">
+      <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+      <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="libs/select.js"></script>
+      <script type="text/javascript" src="libs/calc.js"></script>
+      <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+      <script type="text/javascript" src="libs/jquery.fancybox.min.js"></script>
+    </div>
+  </body>
+</html>

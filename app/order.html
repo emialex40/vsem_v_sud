@@ -1,0 +1,380 @@
+
+<!----><!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Квитанция</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqGR1bleVWJ8jDNQqxbjI1x1DucM4qJDc"></script>
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <!--header-->
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="header_logo"><a href="/"><img src="img/logo.png" alt="logo" class="header_logo-img"></a></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+              <div class="header_text">
+                Юридические услуги - помощь при ДТП,
+                разводах, исковые заявления, сопровождение
+                в суде, составление претензии, консультирование.
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="header_info"><a href="tel:+7 (495) 585-82-43" class="header_phone">+7 (495) 585-82-43</a><a href="mailto:info@vsemvsud.ru" class="header_mail">info@vsemvsud.ru</a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="nav"><a href="/" class="nav_logo">VSEMvSUD.ru</a>
+                <ul class="nav_menu">
+                  <li class="nav_menu-item"><a href="/">ГЛАВНАЯ</a></li>
+                  <li class="nav_menu-item"><a href="#">СТАТЬИ<sup>25</sup></a></li>
+                  <li class="nav_menu-item"><a href="#">ОБ АВТОРЕ</a></li>
+                  <li class="nav_menu-item"><a href="#">ЦЕНЫ</a></li>
+                </ul>
+                <div class="nav_humburger js-nav">
+                  <div class="nav_humburger-line js-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--count-->
+      <section class="section order">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <h3 class="order_header">Выписать квитанцию</h3><strong class="order_title">Оформить квитанцию для уплаты госопшлины</strong>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="order_wrap">
+                <div class="order_text">
+                  <p>
+                    На настоящей странице Вы можете оформить квитанцию для <a href="#">оплаты госпошлины</a> и
+                    распечатать ее для последующей оплаты.
+                  </p>
+                  <p>
+                    Для этого, Вам нужно заполнить все поля, расположенные ниже и нажать кнопку
+                    "скачать заполненную квитанцию".
+                  </p>
+                  <p>
+                    Внимание! Реквизиты, заполненные в квитанции по умолчанию являются
+                    демонстративными и не подходят для уплаты госпошлины!
+                  </p>
+                  <p>
+                    При заполнении квитанции, введите реквизиты суда, в который вы
+                    будете <a href="#">подавать заявление.</a>
+                  </p>
+                </div>
+                <div class="order_form_wrap">
+                  <div class="order_form">
+                    <form id="o_form" method="post" class="order_o_form">
+                      <div class="order_table">
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_choice" class="order_label">Наименование получателя:</label>
+                          </div>
+                          <div class="order_td">
+                            <select name="order_choice" id="o_choice" class="order_input js-select">
+                              <option value="">Выберите районный суд</option>
+                              <option value="3">Бабушкинский районный суд г. Москвы</option>
+                              <option value="5">Басманный районный суд г. Москвы</option>
+                              <option value="4">Бутырский районный суд г. Москвы</option>
+                              <option value="2">Гагаринский районный суд г. Москвы</option>
+                              <option value="1">Головинский районный суд г. Москвы</option>
+                              <option value="6">Дорогомиловский районный суд г. Москвы</option>
+                              <option value="7">Замоскворецкий районный суд г. Москвы</option>
+                              <option value="8">Зеленоградский районный суд г. Москвы</option>
+                              <option value="9">Зюзинский районный суд г. Москвы</option>
+                              <option value="10">Измайловский районный суд г. Москвы</option>
+                              <option value="11">Коптевский районный суд г. Москвы</option>
+                              <option value="12">Кузьминский районный суд г. Москвы</option>
+                              <option value="13">Кунцевский районный суд г. Москвы</option>
+                              <option value="14">Лефортовский районный суд г. Москвы</option>
+                              <option value="16">Люблинский районный суд г. Москвы</option>
+                              <option value="15">Мещанский районный суд г. Москвы</option>
+                              <option value="17">Нагатинский районный суд г. Москвы</option>
+                              <option value="18">Никулинский районный суд г. Москвы</option>
+                              <option value="19">Останкинский районный суд г. Москвы</option>
+                              <option value="20">Перовский районный суд г. Москвы</option>
+                              <option value="21">Преображенский районный суд г. Москвы</option>
+                              <option value="22">Пресненский районный суд г. Москвы</option>
+                              <option value="23">Савеловский районный суд г. Москвы</option>
+                              <option value="24">Симоновский районный суд г. Москвы</option>
+                              <option value="25">Солнцевский районный суд г. Москвы</option>
+                              <option value="26">Таганский районный суд г. Москвы</option>
+                              <option value="27">Тверской районный суд г. Москвы</option>
+                              <option value="28">Тимирязевский районный суд г. Москвы</option>
+                              <option value="29">Тушинский районный суд г. Москвы</option>
+                              <option value="31">Хамовнический районный суд г. Москвы</option>
+                              <option value="32">Хорошевский районный суд г. Москвы</option>
+                              <option value="30">Черемушкинский районный суд г. Москвы</option>
+                              <option value="33">Чертановский районный суд г. Москвы</option>
+                              <option value="34">Щербинский районный суд г. Москвы</option>
+                              <!--1-->
+                            </select>
+                          </div>
+                        </div>
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_kpp" class="order_label">КПП:</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_kpp" type="text" name="o_kpp" readonly class="order_input">
+                          </div>
+                        </div>
+                        <!--2-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_inn" class="order_label">ИНН:</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_inn" type="text" name="o_inn" readonly class="order_input">
+                          </div>
+                        </div>
+                        <!--3-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_oktmo" class="order_label">Код ОКТМО:</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_oktmo" type="text" name="o_oktmo" readonly class="order_input">
+                          </div>
+                        </div>
+                        <!--4-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_numb" class="order_label">Номер счета получателя платежа:</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_numb" type="text" name="o_numb" readonly class="order_input">
+                          </div>
+                        </div>
+                        <!--5-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_bank" class="order_label">Наименование Банка:</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_bank" type="text" name="o_bank" readonly class="order_input">
+                          </div>
+                        </div>
+                        <!--6-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_bik" class="order_label">БИК:</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_bik" type="text" name="o_bik" value="044583001" readonly class="order_input">
+                          </div>
+                        </div>
+                        <!--7-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_pay" class="order_label">Наименование платежа:</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_pay" type="text" name="o_pay" value="Госпошлина" readonly class="order_input">
+                          </div>
+                        </div>
+                        <!--8-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_code" class="order_label">Код бюджетной классификации (КБК):</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_code" type="text" name="o_code" value="18210803010011000110" readonly class="order_input">
+                          </div>
+                        </div>
+                        <!--9-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_fio" class="order_label">ФИО плательщика* :</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_fio" type="text" name="o_fio" required class="order_input">
+                          </div>
+                        </div>
+                        <!--10-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_adress" class="order_label">Адрес Плательшика* :</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_adress" type="text" name="o_adress" required class="order_input">
+                          </div>
+                        </div>
+                        <!--11-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_date" class="order_label">Дата:</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_date" type="text" name="o_date" class="order_input">
+                          </div>
+                        </div>
+                        <!--12-->
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <label for="o_sum" class="order_label">Сумма:</label>
+                          </div>
+                          <div class="order_td">
+                            <input id="o_sum" type="text" name="o_sum" class="order_input">
+                          </div>
+                        </div>
+                        <div class="order_row">
+                          <div class="order_td order_td-first">
+                            <input type="submit" name="Рассчитать" id="_calc" value="Скачать заполненную квитанцию" class="order_submit">
+                          </div>
+                          <div class="order_td"></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3">
+              <div class="footer_logo"><a href="/"><img src="img/logo.png" alt="logo" class="footer_logo-img"></a><a href="/" class="footer_logo-title">VSEMvSUD.ru</a></div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <ul class="footer_list footer_list-left">
+                <li><a href="#">ЗАКОНОДАТЕЛЬСТВО</a></li>
+                <li><a href="#">ОБ АВТОРЕ</a></li>
+                <li><a href="#">ЦЕНЫ НА ЮРИДИЧЕСКИЕ</a></li>
+                <li><a href="#">УСЛУГИ В МОСКВЕ</a></li>
+                <li><a href="#">СТОИМОСТЬ ЧАСТНОГО ЮРИСТА</a></li>
+                <li><a href="#">ПОМОЩЬ</a></li>
+                <li><a href="#">ВСЕ СТАТЬИ</a></li>
+                <li><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <ul class="footer_list footer_list-right">
+                <li><a href="#">ПОЛЕЗНЫЕ СОВЕТЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#">ЮРИСТ НА ДОМ</a></li>
+                <li><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
+                <li><a href="#">БЛОГ</a></li>
+                <li><a href="#">SAM-SEBE-URIST</a></li>
+                <li><a href="#">ПРАЙС-ЛИСТ НА УСЛУГИ РЕГИСТРАЦИИ</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="footer_info">
+                <div class="footer_info-top"><a href="tel:+7 (495) 585-82-43" class="footer_phone">+7 (495) 585-82-43</a><a href="mailto:info@vsemvsud.ru" class="footer_mail">info@vsemvsud.ru</a><a href="javascript:;" data-fancybox data-src="#callback" class="footer_btn js-cbk">Заказать звонок</a></div>
+                <div class="footer_info-center">
+                  <p>г. Москва, Варшавское<br> ш. Д.132 стр. 9, оф. 589</p>
+                </div>
+                <div class="footer_info-bottom">
+                  <ul class="footer_social">
+                    <li><a href="#" class="footer_link footer_link-vk"></a></li>
+                    <li><a href="#" class="footer_link footer_link-fb"></a></li>
+                    <li><a href="#" class="footer_link footer_link-insta"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--mobile slide menu-->
+      <div class="mob">
+        <div class="mob_menu">
+          <div class="mob_menu-close js-close"></div>
+          <div class="mob_menu-list"></div>
+        </div>
+      </div>
+      <!-- callback modal-->
+      <div id="callback" class="callback">
+        <!--.callback_close.js-c_close-->
+        <div class="callback_title"><span>Заказать звонок</span></div>
+        <form id="c_back" method="post" class="callback_form">
+          <div class="callback_box">
+            <label for="c_name" class="callback_label">Имя:</label>
+            <input id="c_name" type="text" name="name" placeholder="Ваше имя..." class="callback_input callback_name">
+          </div>
+          <div class="callback_box">
+            <label for="c_phone" class="callback_label">Телефон:</label>
+            <input id="c_phone" type="tel" name="phone" placeholder="Ваш телефон..." class="callback_input callback_phone">
+          </div>
+          <div class="callback_box callback_box-subm">
+            <input type="submit" value="Отправить" class="callback_subm js-subm">
+          </div>
+        </form>
+      </div>
+      <!--qustions modal-->
+      <div id="modal" class="modal">
+        <!--.modal_close.js-c_close-->
+        <div class="modal_title"><span>Задать вопрос юристу</span></div>
+        <form id="mod" method="post" class="modal_form">
+          <div class="modal_box">
+            <label for="c_name" class="modal_label">Имя:</label>
+            <input id="m_name" type="text" name="name" placeholder="Ваше имя..." class="modal_input modal_name">
+          </div>
+          <div class="modal_box">
+            <label for="c_email" class="modal_label">E-mail:</label>
+            <input id="m_email" type="email" name="email" placeholder="Ваш e-mail..." class="modal_input modal_email">
+          </div>
+          <div class="modal_box">
+            <label for="c_name" class="modal_label">Вопрос:</label>
+            <textarea id="m_phone" form="mod" name="email" placeholder="Ваш вопрос..." class="modal_area"></textarea>
+          </div>
+          <div class="modal_box modal_box-subm">
+            <input type="submit" value="Отправить сообщение" class="modal_subm js-subm">
+          </div>
+        </form>
+      </div>
+      <!--calc modal-->
+      <div id="calc-modal" class="calc_modal">
+        <div class="calc_modal-wrap">
+          <form id="cl_form" method="post" class="calc_modal-form">
+            <div class="calc_modal-box js-txt"><span>Сумма государственной пошлины:</span><strong>0</strong>
+              <input id="cl_hidden" type="hidden" name="cl_hidden" class="calc_mobal-hidden js-hid">
+            </div>
+            <div class="calc_modal-box">
+              <p>Введите Ваши ФИО или название организации:</p>
+            </div>
+            <div class="calc_modal-box">
+              <input type="text" name="fio" placeholder="Ваше имя" class="calc_modal-input">
+            </div>
+            <div class="calc_modal-box">
+              <input type="text" name="address" placeholder="Ваш адрес" class="calc_modal-input">
+            </div>
+            <div class="calc_modal-box">
+              <input type="submit" value="Распечатать квитанцию" class="calc_modal-submit js-sbt">
+            </div>
+          </form>
+        </div>
+      </div>
+      <link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="libs/slick/slick.css">
+      <link rel="stylesheet" href="libs/slick/slick-theme.css">
+      <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+      <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="libs/select.js"></script>
+      <script type="text/javascript" src="libs/calc.js"></script>
+      <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+      <script type="text/javascript" src="libs/jquery.fancybox.min.js"></script>
+    </div>
+  </body>
+</html>

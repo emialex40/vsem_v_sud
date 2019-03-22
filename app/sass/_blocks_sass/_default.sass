@@ -1,0 +1,90 @@
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  background: $body
+  color: $fontBlack
+  line-height: 1.2
+  font-family: $reg
+  overflow-x: hidden
+  opacity: 1
+
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+ul
+  list-style-type: none
+  display: inline-block
+  li
+    display: inline-block
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+  &:active
+    text-decoration: none
+  &:focus
+    text-decoration: none
+
+.main_wrapper
+  width: 100%
+  overflow: hidden
+  position: relative
+  &:before
+    content: ""
+    width: 100%
+    height: 2412px
+    background: url(../img/bg_top.png) no-repeat center center
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    background-size: cover
+  &:after
+    content: ""
+    width: 100%
+    height: 1616px
+    background: url(../img/bg_bottom.jpg) no-repeat center center
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    background-size: cover
+    z-index: -1
+
+
+
+
+.section
+  width: 100%
+

@@ -1,0 +1,118 @@
+.articles
+  padding-top: 50px
+  padding-bottom: 50px
+  &_wrap
+    width: 100%
+    z-index: 2
+  &_header
+    font-family: $semi
+    font-size: 36px
+    color: $fontBlack
+    padding-left: 32px
+    position: relative
+    +respond-to(992)
+      padding-left: 0
+      &:before
+        display: none
+    +respond-to(480)
+      font-size: 24px
+    &:before
+      content: ""
+      width: 25px
+      height: 8px
+      background: $white
+      position: absolute
+      top: 17px
+      left: 0
+  &_list
+    width: 100%
+    margin-top: 70px
+    ul
+      display: block
+      width: 100%
+  &_item
+    max-width: 292px
+    z-index: 100
+    display: block
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    margin-bottom: 70px
+    box-shadow: 0 0 20px  rgba(0, 0, 0, .8)
+  &_img
+    max-width: 292px
+    display: block
+    img
+      width: 100%
+      object-fit: cover
+  &_text
+    max-width: 292px
+    background: rgba(255,255,255, .3)
+    border-top: 1px solid #9e9e9e
+  &_title
+    display: block
+    font-family: $bold
+    font-size: 21px
+    color: $fontBlack
+    padding-top: 18px
+    padding-bottom: 9px
+    padding-left: 20px
+  &_desc
+    font-family: $light
+    font-size: 14px
+    color: $fontBlack
+    padding: 9px 20px
+  &_btn
+    display: block
+    width: 100%
+    height: 40px
+    border: 2px solid $fontBlack
+    text-align: center
+    font-family: $bold
+    font-size: 18px
+    color: $fontBlack
+    line-height: 40px
+    margin-top: 30px
+    transition: .5s ease-in-out
+    &:focus
+      color: $fontBlack
+    &:hover
+      border: 2px solid $white
+      color: $white
+      background: $body
+      transition: .5s ease-in-out
+  &_pagination
+    width: 100%
+    margin-left: 30px
+    +respond-to(480)
+      margin-left: 0
+    li
+      a
+        font-family: $bold
+        font-size: 14px
+        color: $fontBlack
+        border: 2px solid $fontBlack
+        transition: .5s ease-in-out
+        &:hover
+          border: 2px solid $white
+          color: $white
+          background: $body
+          transition: .5s ease-in-out
+  &_beginning
+    margin-right: 20px
+    +respond-to(360)
+      margin-right: 5px
+    a
+      padding: 3px 5px
+  &_end
+    margin-left: 20px
+    +respond-to(360)
+      margin-left: 5px
+    a
+      padding: 3px 5px
+  &_count
+    a
+      display: inline-block
+      padding: 4px 8px
+
+

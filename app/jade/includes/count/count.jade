@@ -1,0 +1,44 @@
+section.section.count
+  .container
+    .row
+      .col-lg-12.col-md-12
+        h3.count_header Суды г. Москвы. Список районных<br> судов города Москвы
+        .count_desc
+          p.
+            Данный модуль отображает всю информацию о судах г. Москвы. Вся собранная информация
+            своевременно обновляется и является актуальной на сегодняшний день. Все изменения в
+            районных судах г. Москвы учитываются и своевременно вносятся в информацию о них.
+            Модуль предназначен для быстро поиска контактов, того или иного суда в Москве и другой
+            информации о нем.
+    .row
+      .col-lg-18.col-md-12
+        .count_choice
+          strong Выберите районный суд:
+        .count_select
+          include select
+    .row
+      .col-lg-12.col-md-12
+        .count_map.js-map
+          include t_map
+        .count_adress.js-adr
+          strong Адрес:
+          span
+    include info
+    .row
+      .col-lg-12.col-md-12
+        .video_buttons
+          a(href="javascript:;", data-fancybox, data-src="#modal")
+            span.video_icon1 Задать вопрос юристу
+          a(href="#")
+            span.video_icon2 Услуги и Цены
+
+
+
+
+
+
+
+
+
+
+

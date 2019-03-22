@@ -1,0 +1,59 @@
+.top_section
+  padding-top: 60px
+
+/*======= why ============*/
+.why
+  width: 100%
+  &_title
+    font-family: $semi
+    font-size: 36px
+    color: $fontBlack
+    padding-left: 32px
+    position: relative
+    +respond-to(992)
+      padding-left: 0
+      &:before
+        display: none
+    +respond-to(640)
+      text-align: center
+    +respond-to(480)
+      font-size: 30px
+    &:before
+      content: ""
+      width: 25px
+      height: 8px
+      background: $white
+      position: absolute
+      top: 17px
+      left: 0
+  &_icons
+    margin-top: 60px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+  &_icon
+    width: 218px
+    margin-bottom: 53px
+    &-img
+      width: 75px
+      height: 75px
+      background: url(../img/why_icons.png) no-repeat
+      display: block
+      margin: 0 auto
+    &-i1
+      background-position: 0 top
+    &-i2
+      background-position: -92px top
+    &-i3
+      background-position: 0 -93px
+    &-i4
+      background-position: -98px -93px
+    &-i5
+      background-position: 0 -182px
+    &-txt
+      font-family: $medium
+      font-size: 12px
+      color: $fontBlack
+      height: 85px
+      text-align: center
+      padding-top: 25px

@@ -1,0 +1,84 @@
+.baner
+  padding-top: 45px
+  &_wrap
+    margin-top: 50px
+    margin-left: -15px
+  &_left
+    width: 95%
+    position: relative
+    +respond-to(992)
+      margin-bottom: 30px
+    +respond-to(640)
+      width: 100%
+  &_circle
+    width: 100px
+    height: 100px
+    background: $white url(../img/gavel.png) no-repeat center center
+    border-radius: 50%
+    position: absolute
+    top: -53px
+    left: 0
+    z-index: 10
+    +respond-to(480)
+      display: none
+  &_title
+    width: 345px
+    height: 57px
+    background: $white
+    border-radius: 0 10px 0 0
+    position: absolute
+    top: -53px
+    left: 56px
+    +respond-to(480)
+      width: 275px
+      left: 0
+    span
+      display: block
+      font-family: $semi
+      font-size: 16px
+      color: $fontBlack
+      padding-left: 48px
+      padding-top: 15px
+      text-transform: uppercase
+      +respond-to(480)
+        font-size: 12px
+  &_txt
+    width: 100%
+    border: 8px solid $white
+    padding-top: 60px
+    padding-left: 20px
+    padding-bottom: 30px
+    p
+      font-family: $medium
+      font-size: 16px
+      color: $fontBlack
+  &_right
+    width: 100%
+  &_info
+    width: 80%
+    border: 8px solid $white
+    padding: 40px 33px
+    text-align: center
+    margin: 0 auto
+    +respond-to(480)
+      width: 100%
+      padding: 40px 15px
+  &_head
+    font-family: $bold
+    font-size: 24px
+    color: $fontBlack
+    +respond-to(480)
+      font-size: 18px
+  &_tel
+    display: block
+    font-family: $bold
+    font-size: 36px
+    color: $fontBlack
+    margin-top: 37px
+    +respond-to(480)
+      font-size: 26px
+    &:hover
+      color: $fontBlack
+    &:focus
+      color: $fontBlack
+

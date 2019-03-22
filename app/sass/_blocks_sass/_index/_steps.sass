@@ -1,0 +1,46 @@
+.steps
+  width: 100%
+  background: $white
+  border: 1px solid $fontBlack
+  border-radius: 15px
+  padding: 20px 30px
+  +respond-to(992)
+    margin-bottom: 30px
+  &_title
+    font-family: $bold
+    font-size: 21px
+    color: $fontBlack
+    text-transform: uppercase
+  &_list
+    margin-top: 12px
+  &_item
+    border-bottom: 1px solid $fontBlack
+    display: block
+  &_link
+    font-family: $semi
+    font-size: 16px
+    color: $fontBlack
+    transition: .5s ease-in-out
+    display: block
+    margin-top: 18px
+    &:hover
+      opacity: .6
+      transition: .5s ease-in-out
+    &:focus
+      color: $fontBlack
+  &_desc
+    font-family: $reg
+    font-size: 16px
+    color: $fontBlack
+    padding: 14px 0
+  &_some
+    font-family: $semi
+    font-size: 18px
+    text-align: center
+    padding: 38px 0
+    &-link
+      color: $fontBlack
+      &:hover
+        color: $fontBlack
+      &:focus
+        color: $fontBlack

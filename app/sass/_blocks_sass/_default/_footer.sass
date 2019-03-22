@@ -1,0 +1,133 @@
+.footer
+  width: 100%
+  height: auto
+  background: $white
+  padding: 40px 0
+  position: relative
+  &_logo
+    width: 100%
+    text-align: center
+    &-img
+      display: block
+      margin: 0 auto
+    &-title
+      display: block
+      font-family: $bold
+      font-size: 30px
+      color: $fontBlack
+  &_list
+    font-family: $medium
+    font-size: 16px
+    position: relative
+    max-width: 286px
+    +respond-to(992)
+      left: 50%
+      transform: translateX(-50%)
+    &-left
+      +respond-to(992)
+        margin: 30px 0
+    &-right
+      margin: 30px 0
+    li
+      display: block
+      padding: 8px 0
+      &:first-child
+        padding-top: 0
+      &:last-child
+        padding-bottom: 0
+      a
+        color: $fontBlack
+        transition: .5s ease-in-out
+        text-transform: uppercase
+        &:hover
+          opacity: .6
+          transition: .5s ease-in-out
+  &_info
+    max-width: 286px
+    position: relative
+    +respond-to(992)
+      left: 50%
+      transform: translateX(-50%)
+    &-top
+      line-height: 1.8
+    &-center
+      margin-top: 27px
+      p
+        display: block
+        padding-left: 30px
+        font-family: $medium
+        font-size: 18px
+        color: $fontBlack
+        position: relative
+        &:before
+          content: ""
+          width: 14px
+          height: 19px
+          background: url("../img/footer_location.png") no-repeat
+          position: absolute
+          top: 0
+          left: 0
+  &_phone
+    display: block
+    font-family: $bold
+    font-size: 18px
+    color: $fontBlack
+    position: relative
+    padding-left: 30px
+    &:hover
+      color: $fontBlack
+    &:focus
+      color: $fontBlack
+    &:before
+      content: ""
+      width: 19px
+      height: 19px
+      background: url(../img/footer_phone.png) no-repeat
+      position: absolute
+      top: 0
+      left: 0
+  &_mail
+    display: block
+    font-family: $reg
+    font-size: 16px
+    color: $fontBlack
+    padding-left: 53px
+    &:hover
+      color: $fontBlack
+    &:focus
+      color: $fontBlack
+  &_btn
+    width: 163px
+    height: 30px
+    background: none
+    border: 3px solid $fontBlack
+    font-family: $reg
+    font-size: 16px
+    color: $fontBlack
+    display: block
+    margin-left: 30px
+    margin-top: 15px
+    line-height: 23px
+    transition: .5s ease-in-out
+    text-align: center
+    &:hover
+      background: $body
+      color: $white
+      border: 3px solid $body
+      transition: .5s ease-in-out
+  &_social
+    margin-top: 50px
+    li
+      padding-left: 15px
+  &_link
+    display: inline-block
+    width: 40px
+    height: 40px
+    overflow: hidden
+    background: url(../img/social_icons.png) no-repeat
+    &-vk
+      background-position: 0 top
+    &-fb
+      background-position: -58px top
+    &-insta
+      background-position: -113px top

@@ -1,0 +1,13 @@
+.callback#callback
+  //.callback_close.js-c_close
+  .callback_title
+    span Заказать звонок
+  form#c_back.callback_form(method="post")
+    .callback_box
+      label.callback_label(for='c_name') Имя:
+      input#c_name.callback_input.callback_name(type="text", name="name" placeholder="Ваше имя...")
+    .callback_box
+      label.callback_label(for='c_phone') Телефон:
+      input#c_phone.callback_input.callback_phone(type="tel", name="phone" placeholder="Ваш телефон...")
+    .callback_box.callback_box-subm
+      input.callback_subm.js-subm(type="submit", value="Отправить")
